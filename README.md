@@ -1,79 +1,130 @@
-# Dansk til Luis
+# Danish Exercises Database
 
-An Android app for learning Danish through interactive exercises.
+Exercise data repository for the "Dansk til Luis" Android app.
 
-## Features
+## What's This?
 
-The app includes three types of exercises:
+This repository contains **only the exercise data** (JSON files) for learning Danish. The Android app (kept locally) downloads these exercises and processes them on your phone.
 
-1. **Multiple Choice**: Tap the correct option from a list of choices
-2. **Fill in the Blank**: Type the correct word or phrase
-3. **Match Pairs**: Tap items from two groups to match them correctly
-
-## Project Structure
+## Repository Structure
 
 ```
-androidApp/
-├── app/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/com/luisdecunto/dansktilluis/
-│   │       │   ├── models/          # Data models
-│   │       │   │   ├── Exercise.kt
-│   │       │   │   └── ExerciseSet.kt
-│   │       │   ├── storage/         # Progress tracking
-│   │       │   │   └── ProgressManager.kt
-│   │       │   ├── ui/              # UI components
-│   │       │   │   ├── MultipleChoiceFragment.kt
-│   │       │   │   ├── FillInTheBlankFragment.kt
-│   │       │   │   ├── MatchPairsFragment.kt
-│   │       │   │   └── ExerciseSetAdapter.kt
-│   │       │   ├── MainActivity.kt
-│   │       │   └── ExerciseActivity.kt
-│   │       ├── res/
-│   │       │   ├── layout/          # XML layouts
-│   │       │   ├── values/          # Strings, colors, themes
-│   │       │   └── drawable/        # Images and icons
-│   │       └── AndroidManifest.xml
-│   └── build.gradle
-├── build.gradle
-└── settings.gradle
+danish-exercises/
+├── data/
+│   ├── exercises/
+│   │   ├── example_batch_001.json
+│   │   ├── batch_002.json
+│   │   └── batch_003.json
+│   ├── texts/
+│   │   └── texts_001.json
+│   └── README.md
+├── GITHUB_ARCHITECTURE.md
+└── README.md
 ```
 
 ## How It Works
 
-1. **MainActivity**: Shows a list of exercise sets with progress tracking
-2. **ExerciseActivity**: Displays exercises one at a time
-3. **Exercise Fragments**: Handle the UI and logic for each exercise type
-4. **ProgressManager**: Saves and loads your progress using SharedPreferences
+```
+┌──────────────────────────────────┐
+│  This GitHub Repo (Public)       │
+│  Contains: Exercise JSON files   │
+└────────────┬─────────────────────┘
+             │
+             │ Downloads from
+             │
+             ▼
+┌──────────────────────────────────┐
+│  Android App (Local)             │
+│  - Downloads JSON files          │
+│  - Stores in Room Database       │
+│  - Processes exercises           │
+│  - Tracks your progress          │
+└──────────────────────────────────┘
+```
 
-## Current Status
+## Exercise Format
 
-This is a skeleton project with:
-- Complete project structure
-- Three exercise types implemented
-- Progress tracking system
-- Sample exercises for testing
+See [data/README.md](data/README.md) for detailed format specifications.
 
-## Next Steps
+**Quick example:**
 
-To populate the app with real exercises:
+```json
+{
+  "batch_id": "batch_001",
+  "created_at": "2025-12-18",
+  "version": 1,
+  "exercises": [
+    {
+      "id": "ex_001",
+      "type": "multiple_choice",
+      "question": "What is 'Hello' in Danish?",
+      "text_id": null,
+      "difficulty": "beginner",
+      "data": {
+        "options": ["Hej", "Tak", "Farvel", "Undskyld"],
+        "correctAnswerIndex": 0
+      }
+    },
+    {
+      "id": "ex_002",
+      "type": "fill_in_blank",
+      "question": "How do you say 'Good morning'?",
+      "text_id": null,
+      "difficulty": "beginner",
+      "data": {
+        "correctAnswer": "Godmorgen",
+        "hint": "Similar to English"
+      }
+    }
+  ]
+}
+```
 
-1. Create JSON files with exercise data
-2. Add a data loading system to read exercises from files
-3. Add more exercise sets based on your Danish learning materials
-4. Customize the UI colors and themes
-5. Add icons and images
+## Adding Exercises
 
-## Building the App
+### On Your Phone with Claude Code:
 
-1. Open the project in Android Studio
-2. Sync Gradle files
-3. Run on an emulator or physical device
+1. Clone this repository
+2. Create/edit files in `data/exercises/`
+3. Commit and push changes
+4. Open the Dansk til Luis app
+5. Tap the refresh button 🔄
+6. New exercises download automatically!
 
-## Requirements
+### On a Computer:
 
-- Android Studio Arctic Fox or newer
-- Android SDK 24 or higher (Android 7.0+)
-- Kotlin 1.9.0
-- Gradle 8.1.0
+1. Clone this repository
+2. Edit JSON files in `data/exercises/`
+3. Commit and push to GitHub
+4. App will sync on next refresh
+
+## Exercise Types
+
+1. **Multiple Choice** - Select the correct option
+2. **Fill in the Blank** - Type the correct answer
+3. **Match Pairs** - Match items from two groups
+
+## Difficulty Levels
+
+- `beginner` - Basic words and phrases
+- `intermediate` - Common sentences and grammar
+- `advanced` - Complex topics and native expressions
+
+## File Naming Convention
+
+- Exercise batches: `batch_XXX.json` (e.g., `batch_001.json`, `batch_002.json`)
+- Text articles: `texts_XXX.json`
+- Use sequential numbering
+- Each batch should contain 10-20 exercises
+
+## Architecture
+
+For technical details about how the app syncs with this repository, see [GITHUB_ARCHITECTURE.md](GITHUB_ARCHITECTURE.md).
+
+## License
+
+Personal learning project. Exercise content is for educational purposes.
+
+---
+
+**Note:** This repository contains only exercise data. The Android app code is kept separately and is not public.
