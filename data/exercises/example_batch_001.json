@@ -1,0 +1,40 @@
+{
+  "batch_id": "batch_001",
+  "created_at": "2025-12-18",
+  "version": 1,
+  "exercises": [
+    {
+      "id": "ex_001",
+      "type": "multiple_choice",
+      "question": "What is 'Hello' in Danish?",
+      "text_id": null,
+      "difficulty": "beginner",
+      "data": {
+        "options": ["Hej", "Tak", "Farvel", "Undskyld"],
+        "correctAnswerIndex": 0
+      }
+    },
+    {
+      "id": "ex_002",
+      "type": "fill_in_blank",
+      "question": "How do you say 'Good morning'?",
+      "text_id": null,
+      "difficulty": "beginner",
+      "data": {
+        "correctAnswer": "Godmorgen",
+        "hint": "Similar to English"
+      }
+    },
+    {
+      "id": "ex_003",
+      "type": "multiple_choice",
+      "question": "What is 'Goodbye' in Danish?",
+      "text_id": null,
+      "difficulty": "beginner",
+      "data": {
+        "options": ["Hej", "Tak", "Farvel", "Hej hej"],
+        "correctAnswerIndex": 2
+      }
+    }
+  ]
+}

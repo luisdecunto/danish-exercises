@@ -1,0 +1,70 @@
+{
+  "exerciseSets": [
+    {
+      "id": "greetings",
+      "title": "Basic Greetings",
+      "description": "Learn how to greet people in Danish",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "id": "greet_1",
+          "question": "What is 'Hello' in Danish?",
+          "options": ["Hej", "Tak", "Farvel", "Undskyld"],
+          "correctAnswerIndex": 0
+        },
+        {
+          "type": "fill_in_blank",
+          "id": "greet_2",
+          "question": "How do you say 'Good morning' in Danish?",
+          "correctAnswer": "Godmorgen",
+          "hint": "It's similar to English"
+        },
+        {
+          "type": "match_pairs",
+          "id": "greet_3",
+          "question": "Match the Danish greetings with their English translations",
+          "leftItems": ["Hej", "Farvel", "Godnat"],
+          "rightItems": ["Goodbye", "Hello", "Good night"],
+          "correctPairs": {
+            "0": 1,
+            "1": 0,
+            "2": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers 1-10",
+      "description": "Learn to count from 1 to 10 in Danish",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "id": "num_1",
+          "question": "What is 'One' in Danish?",
+          "options": ["En", "To", "Tre", "Fire"],
+          "correctAnswerIndex": 0
+        },
+        {
+          "type": "fill_in_blank",
+          "id": "num_2",
+          "question": "Write the Danish word for 'Five'",
+          "correctAnswer": "Fem",
+          "hint": "Starts with F"
+        },
+        {
+          "type": "match_pairs",
+          "id": "num_3",
+          "question": "Match the numbers",
+          "leftItems": ["Seks", "Syv", "Otte"],
+          "rightItems": ["Eight", "Six", "Seven"],
+          "correctPairs": {
+            "0": 1,
+            "1": 2,
+            "2": 0
+          }
+        }
+      ]
+    }
+  ]
+}
