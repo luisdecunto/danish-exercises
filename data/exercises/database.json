@@ -1,0 +1,77 @@
+{
+  "texts": {
+    "text_001": {
+      "id": "text_001",
+      "title": "At the Supermarket",
+      "content": "Jeg går i supermarkedet hver onsdag. Jeg køber mælk, brød og frugt.",
+      "translation": "I go to the supermarket every Wednesday. I buy milk, bread and fruit."
+    },
+    "text_002": {
+      "id": "text_002",
+      "title": "Greetings",
+      "content": "Hej! Hvordan har du det? Jeg har det godt, tak.",
+      "translation": "Hello! How are you? I am fine, thank you."
+    }
+  },
+  "exercises": [
+    {
+      "id": "ex_001",
+      "type": "multiple_choice",
+      "text_id": null,
+      "question": "What is 'Hello' in Danish?",
+      "options": ["Hej", "Tak", "Farvel", "Undskyld"],
+      "correct": 0,
+      "explanation": "Hej is the most common Danish greeting"
+    },
+    {
+      "id": "ex_002",
+      "type": "write_word",
+      "text_id": null,
+      "question": "How do you say 'Thank you' in Danish?",
+      "correct": "tak",
+      "accept_variants": ["mange tak"],
+      "hint": "It's very short"
+    },
+    {
+      "id": "ex_003",
+      "type": "multiple_choice",
+      "text_id": "text_002",
+      "question": "According to the text, what does 'Hvordan har du det?' mean?",
+      "options": ["Hello", "How are you?", "Thank you", "Goodbye"],
+      "correct": 1,
+      "explanation": "This is a common way to ask how someone is doing"
+    },
+    {
+      "id": "ex_004",
+      "type": "write_word",
+      "text_id": "text_001",
+      "question": "What day does the person go to the supermarket? (in Danish)",
+      "correct": "onsdag",
+      "hint": "Look at 'hver onsdag' in the text"
+    },
+    {
+      "id": "ex_005",
+      "type": "match_pairs",
+      "text_id": null,
+      "question": "Match the Danish words with their English translations",
+      "pairs": [
+        {"left": "mælk", "right": "milk"},
+        {"left": "brød", "right": "bread"},
+        {"left": "frugt", "right": "fruit"},
+        {"left": "ost", "right": "cheese"}
+      ]
+    },
+    {
+      "id": "ex_006",
+      "type": "match_pairs",
+      "text_id": null,
+      "question": "Match the Danish greetings",
+      "pairs": [
+        {"left": "Hej", "right": "Hello"},
+        {"left": "Farvel", "right": "Goodbye"},
+        {"left": "Tak", "right": "Thank you"},
+        {"left": "Undskyld", "right": "Excuse me"}
+      ]
+    }
+  ]
+}
