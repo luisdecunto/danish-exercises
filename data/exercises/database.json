@@ -3,14 +3,62 @@
     "text_001": {
       "id": "text_001",
       "title": "At the Supermarket",
-      "content": "Jeg går i supermarkedet hver onsdag. Jeg køber mælk, brød og frugt.",
-      "translation": "I go to the supermarket every Wednesday. I buy milk, bread and fruit."
+      "content": "Jeg går i supermarkedet hver onsdag. Jeg køber mælk, brød og frugt. Jeg kan også lide ost og smør.",
+      "translation": "I go to the supermarket every Wednesday. I buy milk, bread and fruit. I also like cheese and butter."
     },
     "text_002": {
       "id": "text_002",
       "title": "Greetings",
-      "content": "Hej! Hvordan har du det? Jeg har det godt, tak.",
-      "translation": "Hello! How are you? I am fine, thank you."
+      "content": "Hej! Hvordan har du det? Jeg har det godt, tak. Hvad hedder du?",
+      "translation": "Hello! How are you? I am fine, thank you. What is your name?"
+    },
+    "text_003": {
+      "id": "text_003",
+      "title": "My Family",
+      "content": "Jeg har en mor, en far og to søstre. Min mor hedder Anna, og min far hedder Peter. Mine søstre hedder Line og Sofie.",
+      "translation": "I have a mother, a father and two sisters. My mother is called Anna and my father is called Peter. My sisters are called Line and Sofie."
+    },
+    "text_004": {
+      "id": "text_004",
+      "title": "At School",
+      "content": "Jeg går i skole hver dag. Min lærer er venlig. Jeg lærer dansk, matematik og engelsk. Jeg kan godt lide at læse bøger.",
+      "translation": "I go to school every day. My teacher is friendly. I learn Danish, math and English. I like reading books."
+    },
+    "text_005": {
+      "id": "text_005",
+      "title": "The Weather",
+      "content": "I dag er vejret godt. Det er solrigt og varmt. I morgen bliver det koldt, og det vil regne.",
+      "translation": "Today the weather is good. It is sunny and warm. Tomorrow it will be cold and it will rain."
+    },
+    "text_006": {
+      "id": "text_006",
+      "title": "My Hobbies",
+      "content": "I min fritid spiller jeg fodbold. Jeg elsker også at cykle og svømme. Om aftenen læser jeg bøger eller ser fjernsyn.",
+      "translation": "In my free time I play football. I also love cycling and swimming. In the evening I read books or watch TV."
+    },
+    "text_007": {
+      "id": "text_007",
+      "title": "In the City",
+      "content": "København er Danmarks hovedstad. Der er mange smukke bygninger og parker. Mange mennesker cykler rundt i byen.",
+      "translation": "Copenhagen is Denmark's capital. There are many beautiful buildings and parks. Many people cycle around the city."
+    },
+    "text_008": {
+      "id": "text_008",
+      "title": "At the Restaurant",
+      "content": "Jeg vil gerne bestille mad. Kan jeg få en pizza og en cola? Hvad koster det?",
+      "translation": "I would like to order food. Can I have a pizza and a coke? How much does it cost?"
+    },
+    "text_009": {
+      "id": "text_009",
+      "title": "Daily Routine",
+      "content": "Jeg står op klokken syv om morgenen. Jeg spiser morgenmad og børster mine tænder. Derefter tager jeg i skole.",
+      "translation": "I get up at seven in the morning. I eat breakfast and brush my teeth. Then I go to school."
+    },
+    "text_010": {
+      "id": "text_010",
+      "title": "Transportation",
+      "content": "Jeg tager bussen til arbejde. Min kone kører bil. Vores børn cykler til skole, fordi det er sundt.",
+      "translation": "I take the bus to work. My wife drives a car. Our children cycle to school because it is healthy."
     }
   },
   "exercises": [
@@ -18,6 +66,7 @@
       "id": "ex_001",
       "type": "multiple_choice",
       "text_id": null,
+      "level": "A1",
       "question": "What is 'Hello' in Danish?",
       "options": ["Hej", "Tak", "Farvel", "Undskyld"],
       "correct": 0,
@@ -27,6 +76,7 @@
       "id": "ex_002",
       "type": "write_word",
       "text_id": null,
+      "level": "A1",
       "question": "How do you say 'Thank you' in Danish?",
       "correct": "tak",
       "accept_variants": ["mange tak"],
@@ -36,6 +86,7 @@
       "id": "ex_003",
       "type": "multiple_choice",
       "text_id": "text_002",
+      "level": "A1",
       "question": "According to the text, what does 'Hvordan har du det?' mean?",
       "options": ["Hello", "How are you?", "Thank you", "Goodbye"],
       "correct": 1,
@@ -45,6 +96,7 @@
       "id": "ex_004",
       "type": "write_word",
       "text_id": "text_001",
+      "level": "A1",
       "question": "What day does the person go to the supermarket? (in Danish)",
       "correct": "onsdag",
       "hint": "Look at 'hver onsdag' in the text"
@@ -53,6 +105,7 @@
       "id": "ex_005",
       "type": "match_pairs",
       "text_id": null,
+      "level": "A1",
       "question": "Match the Danish words with their English translations",
       "pairs": [
         {"left": "mælk", "right": "milk"},
@@ -65,6 +118,7 @@
       "id": "ex_006",
       "type": "match_pairs",
       "text_id": null,
+      "level": "A1",
       "question": "Match the Danish greetings",
       "pairs": [
         {"left": "Hej", "right": "Hello"},
@@ -72,6 +126,947 @@
         {"left": "Tak", "right": "Thank you"},
         {"left": "Undskyld", "right": "Excuse me"}
       ]
+    },
+    {
+      "id": "ex_007",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A1",
+      "question": "What is 'Goodbye' in Danish?",
+      "options": ["Hej", "Tak", "Farvel", "God morgen"],
+      "correct": 2
+    },
+    {
+      "id": "ex_008",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A1",
+      "question": "How do you say 'Yes' in Danish?",
+      "correct": "ja",
+      "hint": "Similar to German"
+    },
+    {
+      "id": "ex_009",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A1",
+      "question": "How do you say 'No' in Danish?",
+      "correct": "nej",
+      "hint": "Starts with 'n'"
+    },
+    {
+      "id": "ex_010",
+      "type": "multiple_choice",
+      "text_id": "text_003",
+      "level": "A1",
+      "question": "How many sisters does the person have?",
+      "options": ["One", "Two", "Three", "Four"],
+      "correct": 1
+    },
+    {
+      "id": "ex_011",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A1",
+      "question": "Match the days of the week",
+      "pairs": [
+        {"left": "mandag", "right": "Monday"},
+        {"left": "tirsdag", "right": "Tuesday"},
+        {"left": "onsdag", "right": "Wednesday"},
+        {"left": "torsdag", "right": "Thursday"}
+      ]
+    },
+    {
+      "id": "ex_012",
+      "type": "write_word",
+      "text_id": "text_003",
+      "level": "A1",
+      "question": "What is the father's name?",
+      "correct": "Peter",
+      "hint": "Look in the text"
+    },
+    {
+      "id": "ex_013",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A1",
+      "question": "What is 'Water' in Danish?",
+      "options": ["vand", "mælk", "kaffe", "te"],
+      "correct": 0
+    },
+    {
+      "id": "ex_014",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A1",
+      "question": "How do you say 'Good morning' in Danish?",
+      "correct": "god morgen",
+      "accept_variants": ["godmorgen"],
+      "hint": "Similar to English"
+    },
+    {
+      "id": "ex_015",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A1",
+      "question": "Match the numbers",
+      "pairs": [
+        {"left": "en", "right": "one"},
+        {"left": "to", "right": "two"},
+        {"left": "tre", "right": "three"},
+        {"left": "fire", "right": "four"}
+      ]
+    },
+    {
+      "id": "ex_016",
+      "type": "multiple_choice",
+      "text_id": "text_004",
+      "level": "A2",
+      "question": "What does the person learn at school?",
+      "options": ["Only Danish", "Danish, math and English", "Only English", "Science and art"],
+      "correct": 1
+    },
+    {
+      "id": "ex_017",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'School' in Danish?",
+      "correct": "skole",
+      "hint": "Starts with 's'"
+    },
+    {
+      "id": "ex_018",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'Book' in Danish?",
+      "options": ["bog", "bil", "bord", "stol"],
+      "correct": 0
+    },
+    {
+      "id": "ex_019",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match the colors",
+      "pairs": [
+        {"left": "rød", "right": "red"},
+        {"left": "blå", "right": "blue"},
+        {"left": "grøn", "right": "green"},
+        {"left": "gul", "right": "yellow"}
+      ]
+    },
+    {
+      "id": "ex_020",
+      "type": "write_word",
+      "text_id": "text_004",
+      "level": "A2",
+      "question": "How does the text describe the teacher? (in Danish)",
+      "correct": "venlig",
+      "hint": "It means 'friendly'"
+    },
+    {
+      "id": "ex_021",
+      "type": "multiple_choice",
+      "text_id": "text_005",
+      "level": "A2",
+      "question": "What will the weather be like tomorrow?",
+      "options": ["Sunny and warm", "Cold and rainy", "Hot and dry", "Windy"],
+      "correct": 1
+    },
+    {
+      "id": "ex_022",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'Today' in Danish?",
+      "correct": "i dag",
+      "accept_variants": ["idag"],
+      "hint": "Two words"
+    },
+    {
+      "id": "ex_023",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match the family members",
+      "pairs": [
+        {"left": "mor", "right": "mother"},
+        {"left": "far", "right": "father"},
+        {"left": "søster", "right": "sister"},
+        {"left": "bror", "right": "brother"}
+      ]
+    },
+    {
+      "id": "ex_024",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'House' in Danish?",
+      "options": ["hus", "have", "hund", "bil"],
+      "correct": 0
+    },
+    {
+      "id": "ex_025",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'Tomorrow' in Danish?",
+      "correct": "i morgen",
+      "accept_variants": ["imorgen"],
+      "hint": "Similar to 'good morning'"
+    },
+    {
+      "id": "ex_026",
+      "type": "multiple_choice",
+      "text_id": "text_006",
+      "level": "A2",
+      "question": "What does the person do in the evening?",
+      "options": ["Play football", "Read books or watch TV", "Swim", "Cycle"],
+      "correct": 1
+    },
+    {
+      "id": "ex_027",
+      "type": "write_word",
+      "text_id": "text_006",
+      "level": "A2",
+      "question": "What sport does the person play in their free time? (in Danish)",
+      "correct": "fodbold",
+      "hint": "It's a popular sport"
+    },
+    {
+      "id": "ex_028",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match the food items",
+      "pairs": [
+        {"left": "smør", "right": "butter"},
+        {"left": "æg", "right": "egg"},
+        {"left": "kød", "right": "meat"},
+        {"left": "fisk", "right": "fish"}
+      ]
+    },
+    {
+      "id": "ex_029",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'To eat' in Danish?",
+      "options": ["at spise", "at drikke", "at løbe", "at gå"],
+      "correct": 0
+    },
+    {
+      "id": "ex_030",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'I like' in Danish?",
+      "correct": "jeg kan lide",
+      "accept_variants": ["jeg kan godt lide"],
+      "hint": "It means 'I can like'"
+    },
+    {
+      "id": "ex_031",
+      "type": "multiple_choice",
+      "text_id": "text_007",
+      "level": "B1",
+      "question": "What is Copenhagen?",
+      "options": ["A city", "Denmark's capital", "A park", "A building"],
+      "correct": 1
+    },
+    {
+      "id": "ex_032",
+      "type": "write_word",
+      "text_id": "text_007",
+      "level": "B1",
+      "question": "How do people get around in Copenhagen? (in Danish)",
+      "correct": "cykler",
+      "accept_variants": ["de cykler", "cykle"],
+      "hint": "It's about cycling"
+    },
+    {
+      "id": "ex_033",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B1",
+      "question": "Match the places in the city",
+      "pairs": [
+        {"left": "bibliotek", "right": "library"},
+        {"left": "hospital", "right": "hospital"},
+        {"left": "station", "right": "station"},
+        {"left": "museum", "right": "museum"}
+      ]
+    },
+    {
+      "id": "ex_034",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What does 'smuk' mean?",
+      "options": ["Beautiful", "Ugly", "Big", "Small"],
+      "correct": 0
+    },
+    {
+      "id": "ex_035",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'Capital' in Danish?",
+      "correct": "hovedstad",
+      "hint": "Compound word"
+    },
+    {
+      "id": "ex_036",
+      "type": "multiple_choice",
+      "text_id": "text_008",
+      "level": "B1",
+      "question": "What does the person want to order?",
+      "options": ["A sandwich", "A pizza and a coke", "A burger", "Coffee"],
+      "correct": 1
+    },
+    {
+      "id": "ex_037",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'How much does it cost?' in Danish?",
+      "correct": "hvad koster det",
+      "hint": "Start with 'hvad'"
+    },
+    {
+      "id": "ex_038",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B1",
+      "question": "Match the verbs",
+      "pairs": [
+        {"left": "at købe", "right": "to buy"},
+        {"left": "at sælge", "right": "to sell"},
+        {"left": "at bestille", "right": "to order"},
+        {"left": "at betale", "right": "to pay"}
+      ]
+    },
+    {
+      "id": "ex_039",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What is 'To work' in Danish?",
+      "options": ["at arbejde", "at spise", "at sove", "at gå"],
+      "correct": 0
+    },
+    {
+      "id": "ex_040",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'I would like' in Danish?",
+      "correct": "jeg vil gerne",
+      "hint": "Used when politely requesting"
+    },
+    {
+      "id": "ex_041",
+      "type": "multiple_choice",
+      "text_id": "text_009",
+      "level": "B1",
+      "question": "What time does the person get up?",
+      "options": ["Six o'clock", "Seven o'clock", "Eight o'clock", "Nine o'clock"],
+      "correct": 1
+    },
+    {
+      "id": "ex_042",
+      "type": "write_word",
+      "text_id": "text_009",
+      "level": "B1",
+      "question": "What does the person do after breakfast? (in Danish)",
+      "correct": "børster mine tænder",
+      "accept_variants": ["børster tænder"],
+      "hint": "Dental hygiene"
+    },
+    {
+      "id": "ex_043",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B1",
+      "question": "Match the time expressions",
+      "pairs": [
+        {"left": "om morgenen", "right": "in the morning"},
+        {"left": "om eftermiddagen", "right": "in the afternoon"},
+        {"left": "om aftenen", "right": "in the evening"},
+        {"left": "om natten", "right": "at night"}
+      ]
+    },
+    {
+      "id": "ex_044",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What does 'derefter' mean?",
+      "options": ["Before", "Then/after that", "Always", "Never"],
+      "correct": 1
+    },
+    {
+      "id": "ex_045",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'To get up' in Danish?",
+      "correct": "at stå op",
+      "hint": "Two words"
+    },
+    {
+      "id": "ex_046",
+      "type": "multiple_choice",
+      "text_id": "text_010",
+      "level": "B2",
+      "question": "Why do the children cycle to school?",
+      "options": ["It's fun", "It's healthy", "It's fast", "It's cheap"],
+      "correct": 1
+    },
+    {
+      "id": "ex_047",
+      "type": "write_word",
+      "text_id": "text_010",
+      "level": "B2",
+      "question": "How does the person get to work? (in Danish)",
+      "correct": "tager bussen",
+      "accept_variants": ["jeg tager bussen", "med bussen"],
+      "hint": "Public transportation"
+    },
+    {
+      "id": "ex_048",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B2",
+      "question": "Match the transportation methods",
+      "pairs": [
+        {"left": "at køre bil", "right": "to drive a car"},
+        {"left": "at tage toget", "right": "to take the train"},
+        {"left": "at flyve", "right": "to fly"},
+        {"left": "at sejle", "right": "to sail"}
+      ]
+    },
+    {
+      "id": "ex_049",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B2",
+      "question": "What does 'fordi' mean?",
+      "options": ["But", "Because", "Therefore", "However"],
+      "correct": 1
+    },
+    {
+      "id": "ex_050",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B2",
+      "question": "How do you say 'Healthy' in Danish?",
+      "correct": "sundt",
+      "accept_variants": ["sund"],
+      "hint": "Adjective form"
+    },
+    {
+      "id": "ex_051",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A1",
+      "question": "What is 'Cat' in Danish?",
+      "options": ["kat", "hund", "fugl", "mus"],
+      "correct": 0
+    },
+    {
+      "id": "ex_052",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A1",
+      "question": "How do you say 'Dog' in Danish?",
+      "correct": "hund",
+      "hint": "Similar to German"
+    },
+    {
+      "id": "ex_053",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A1",
+      "question": "Match the animals",
+      "pairs": [
+        {"left": "hest", "right": "horse"},
+        {"left": "ko", "right": "cow"},
+        {"left": "gris", "right": "pig"},
+        {"left": "høne", "right": "chicken"}
+      ]
+    },
+    {
+      "id": "ex_054",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A1",
+      "question": "What is 'Please' in Danish?",
+      "options": ["tak", "undskyld", "værsgo", "hej"],
+      "correct": 2
+    },
+    {
+      "id": "ex_055",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A1",
+      "question": "How do you say 'Good night' in Danish?",
+      "correct": "godnat",
+      "accept_variants": ["god nat"],
+      "hint": "One or two words"
+    },
+    {
+      "id": "ex_056",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match more numbers",
+      "pairs": [
+        {"left": "fem", "right": "five"},
+        {"left": "seks", "right": "six"},
+        {"left": "syv", "right": "seven"},
+        {"left": "otte", "right": "eight"}
+      ]
+    },
+    {
+      "id": "ex_057",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'Big' in Danish?",
+      "options": ["stor", "lille", "høj", "lav"],
+      "correct": 0
+    },
+    {
+      "id": "ex_058",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'Small' in Danish?",
+      "correct": "lille",
+      "hint": "Opposite of 'stor'"
+    },
+    {
+      "id": "ex_059",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'Cold' in Danish?",
+      "options": ["varm", "kold", "våd", "tør"],
+      "correct": 1
+    },
+    {
+      "id": "ex_060",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match the weather words",
+      "pairs": [
+        {"left": "sol", "right": "sun"},
+        {"left": "regn", "right": "rain"},
+        {"left": "sne", "right": "snow"},
+        {"left": "vind", "right": "wind"}
+      ]
+    },
+    {
+      "id": "ex_061",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'Warm' in Danish?",
+      "correct": "varm",
+      "hint": "Similar to English"
+    },
+    {
+      "id": "ex_062",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'To drink' in Danish?",
+      "options": ["at drikke", "at spise", "at sove", "at løbe"],
+      "correct": 0
+    },
+    {
+      "id": "ex_063",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'Coffee' in Danish?",
+      "correct": "kaffe",
+      "hint": "Very similar to English"
+    },
+    {
+      "id": "ex_064",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match the drinks",
+      "pairs": [
+        {"left": "te", "right": "tea"},
+        {"left": "juice", "right": "juice"},
+        {"left": "øl", "right": "beer"},
+        {"left": "vin", "right": "wine"}
+      ]
+    },
+    {
+      "id": "ex_065",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What is 'To need' in Danish?",
+      "options": ["at have brug for", "at ville", "at skulle", "at måtte"],
+      "correct": 0
+    },
+    {
+      "id": "ex_066",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'To understand' in Danish?",
+      "correct": "at forstå",
+      "hint": "Starts with 'f'"
+    },
+    {
+      "id": "ex_067",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What does 'at betyde' mean?",
+      "options": ["To mean", "To say", "To speak", "To write"],
+      "correct": 0
+    },
+    {
+      "id": "ex_068",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B1",
+      "question": "Match the body parts",
+      "pairs": [
+        {"left": "hoved", "right": "head"},
+        {"left": "hånd", "right": "hand"},
+        {"left": "fod", "right": "foot"},
+        {"left": "øje", "right": "eye"}
+      ]
+    },
+    {
+      "id": "ex_069",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'To believe' in Danish?",
+      "correct": "at tro",
+      "hint": "Short verb"
+    },
+    {
+      "id": "ex_070",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What is 'To remember' in Danish?",
+      "options": ["at huske", "at glemme", "at tænke", "at vide"],
+      "correct": 0
+    },
+    {
+      "id": "ex_071",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'To forget' in Danish?",
+      "correct": "at glemme",
+      "hint": "Opposite of 'at huske'"
+    },
+    {
+      "id": "ex_072",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B1",
+      "question": "Match the adjectives",
+      "pairs": [
+        {"left": "glad", "right": "happy"},
+        {"left": "trist", "right": "sad"},
+        {"left": "vred", "right": "angry"},
+        {"left": "nervøs", "right": "nervous"}
+      ]
+    },
+    {
+      "id": "ex_073",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What does 'træt' mean?",
+      "options": ["Happy", "Tired", "Hungry", "Thirsty"],
+      "correct": 1
+    },
+    {
+      "id": "ex_074",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'Hungry' in Danish?",
+      "correct": "sulten",
+      "hint": "Starts with 's'"
+    },
+    {
+      "id": "ex_075",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B2",
+      "question": "What is 'To develop' in Danish?",
+      "options": ["at udvikle", "at opdage", "at opfinde", "at undersøge"],
+      "correct": 0
+    },
+    {
+      "id": "ex_076",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B2",
+      "question": "How do you say 'To decide' in Danish?",
+      "correct": "at beslutte",
+      "hint": "Starts with 'b'"
+    },
+    {
+      "id": "ex_077",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B2",
+      "question": "Match the professional verbs",
+      "pairs": [
+        {"left": "at undersøge", "right": "to investigate"},
+        {"left": "at forklare", "right": "to explain"},
+        {"left": "at diskutere", "right": "to discuss"},
+        {"left": "at sammenligne", "right": "to compare"}
+      ]
+    },
+    {
+      "id": "ex_078",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B2",
+      "question": "What does 'at påvirke' mean?",
+      "options": ["To affect/influence", "To prevent", "To protect", "To promote"],
+      "correct": 0
+    },
+    {
+      "id": "ex_079",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B2",
+      "question": "How do you say 'Environment' in Danish?",
+      "correct": "miljø",
+      "hint": "From French origin"
+    },
+    {
+      "id": "ex_080",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B2",
+      "question": "What is 'To achieve' in Danish?",
+      "options": ["at opnå", "at forsøge", "at miste", "at undgå"],
+      "correct": 0
+    },
+    {
+      "id": "ex_081",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A1",
+      "question": "Match the rooms in a house",
+      "pairs": [
+        {"left": "køkken", "right": "kitchen"},
+        {"left": "stue", "right": "living room"},
+        {"left": "soveværelse", "right": "bedroom"},
+        {"left": "badeværelse", "right": "bathroom"}
+      ]
+    },
+    {
+      "id": "ex_082",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A1",
+      "question": "How do you say 'Table' in Danish?",
+      "correct": "bord",
+      "hint": "Starts with 'b'"
+    },
+    {
+      "id": "ex_083",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A1",
+      "question": "What is 'Chair' in Danish?",
+      "options": ["stol", "bord", "lampe", "sofa"],
+      "correct": 0
+    },
+    {
+      "id": "ex_084",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'To run' in Danish?",
+      "correct": "at løbe",
+      "hint": "Similar to 'løb' (race)"
+    },
+    {
+      "id": "ex_085",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "A2",
+      "question": "Match the sports",
+      "pairs": [
+        {"left": "svømning", "right": "swimming"},
+        {"left": "tennis", "right": "tennis"},
+        {"left": "basketball", "right": "basketball"},
+        {"left": "håndbold", "right": "handball"}
+      ]
+    },
+    {
+      "id": "ex_086",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "A2",
+      "question": "What is 'To swim' in Danish?",
+      "options": ["at svømme", "at dykke", "at løbe", "at hoppe"],
+      "correct": 0
+    },
+    {
+      "id": "ex_087",
+      "type": "write_word",
+      "text_id": null,
+      "level": "A2",
+      "question": "How do you say 'Ball' in Danish?",
+      "correct": "bold",
+      "hint": "Used in many sports"
+    },
+    {
+      "id": "ex_088",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What does 'at mene' mean?",
+      "options": ["To think/believe", "To know", "To forget", "To learn"],
+      "correct": 0
+    },
+    {
+      "id": "ex_089",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B1",
+      "question": "Match the months",
+      "pairs": [
+        {"left": "januar", "right": "January"},
+        {"left": "februar", "right": "February"},
+        {"left": "marts", "right": "March"},
+        {"left": "april", "right": "April"}
+      ]
+    },
+    {
+      "id": "ex_090",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'Year' in Danish?",
+      "correct": "år",
+      "hint": "Very short word"
+    },
+    {
+      "id": "ex_091",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B1",
+      "question": "What is 'To teach' in Danish?",
+      "options": ["at undervise", "at lære", "at studere", "at læse"],
+      "correct": 0
+    },
+    {
+      "id": "ex_092",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B1",
+      "question": "How do you say 'To learn' in Danish?",
+      "correct": "at lære",
+      "hint": "Similar to teacher 'lærer'"
+    },
+    {
+      "id": "ex_093",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "B2",
+      "question": "Match the abstract nouns",
+      "pairs": [
+        {"left": "frihed", "right": "freedom"},
+        {"left": "lighed", "right": "equality"},
+        {"left": "retfærdighed", "right": "justice"},
+        {"left": "ansvar", "right": "responsibility"}
+      ]
+    },
+    {
+      "id": "ex_094",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B2",
+      "question": "What does 'at stræbe efter' mean?",
+      "options": ["To strive for", "To give up", "To avoid", "To delay"],
+      "correct": 0
+    },
+    {
+      "id": "ex_095",
+      "type": "write_word",
+      "text_id": null,
+      "level": "B2",
+      "question": "How do you say 'Society' in Danish?",
+      "correct": "samfund",
+      "hint": "Compound word"
+    },
+    {
+      "id": "ex_096",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "B2",
+      "question": "What is 'Knowledge' in Danish?",
+      "options": ["viden", "erfaring", "uddannelse", "læring"],
+      "correct": 0
+    },
+    {
+      "id": "ex_097",
+      "type": "write_word",
+      "text_id": null,
+      "level": "C1",
+      "question": "How do you say 'To emphasize' in Danish?",
+      "correct": "at understrege",
+      "accept_variants": ["at fremhæve"],
+      "hint": "Compound verb"
+    },
+    {
+      "id": "ex_098",
+      "type": "match_pairs",
+      "text_id": null,
+      "level": "C1",
+      "question": "Match the complex verbs",
+      "pairs": [
+        {"left": "at antyde", "right": "to imply"},
+        {"left": "at modsige", "right": "to contradict"},
+        {"left": "at bekræfte", "right": "to confirm"},
+        {"left": "at benægte", "right": "to deny"}
+      ]
+    },
+    {
+      "id": "ex_099",
+      "type": "multiple_choice",
+      "text_id": null,
+      "level": "C1",
+      "question": "What does 'at gennemføre' mean?",
+      "options": ["To carry out/implement", "To prevent", "To postpone", "To cancel"],
+      "correct": 0
+    },
+    {
+      "id": "ex_100",
+      "type": "write_word",
+      "text_id": null,
+      "level": "C1",
+      "question": "How do you say 'Nevertheless' in Danish?",
+      "correct": "ikke desto mindre",
+      "accept_variants": ["alligevel", "dog"],
+      "hint": "Multiple words possible"
     }
   ]
 }
