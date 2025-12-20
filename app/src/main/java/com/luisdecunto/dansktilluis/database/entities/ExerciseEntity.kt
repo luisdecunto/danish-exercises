@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class ExerciseEntity(
     @PrimaryKey
     val id: String,               // "ex_001"
-    val type: String,             // "multiple_choice", "write_word", "match_pairs"
+    val type: String,             // "multiple_choice", "write_word", "match_pairs", "article"
     val textId: String?,          // Reference to text or null
     val question: String,         // The question text
     val dataJson: String,         // JSON string containing type-specific data

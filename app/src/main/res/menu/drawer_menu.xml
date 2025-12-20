@@ -15,6 +15,11 @@
             android:title="@string/nav_random_exercise" />
 
         <item
+            android:id="@+id/nav_articles"
+            android:icon="@drawable/ic_article"
+            android:title="@string/nav_articles" />
+
+        <item
             android:id="@+id/nav_progress_overview"
             android:icon="@drawable/ic_chart"
             android:title="@string/nav_progress_overview" />

@@ -68,16 +68,25 @@
                     android:max="100"
                     android:progress="0" />
 
+                <Button
+                    android:id="@+id/continueButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Continue"
+                    android:textAllCaps="false" />
+
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- RecyclerView for exercise sets -->
+        <!-- RecyclerView for exercise sets - HIDDEN -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/exerciseSetsRecyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:padding="16dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

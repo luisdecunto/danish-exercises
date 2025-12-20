@@ -5,53 +5,52 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.luisdecunto.dansktilluis.database.AppDatabase
 import com.luisdecunto.dansktilluis.database.entities.ExerciseEntity
 import com.luisdecunto.dansktilluis.databinding.ActivityMainBinding
+import com.luisdecunto.dansktilluis.models.ArticleExercise
+import com.luisdecunto.dansktilluis.models.ArticleSubExercise
 import com.luisdecunto.dansktilluis.models.Exercise
 import com.luisdecunto.dansktilluis.models.ExerciseSet
 import com.luisdecunto.dansktilluis.models.FillInTheBlankExercise
 import com.luisdecunto.dansktilluis.models.MatchPairsExercise
 import com.luisdecunto.dansktilluis.models.MultipleChoiceExercise
-import com.luisdecunto.dansktilluis.storage.ProgressManager
 import com.luisdecunto.dansktilluis.sync.SyncManager
-import com.luisdecunto.dansktilluis.ui.ExerciseSetAdapter
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var progressManager: ProgressManager
     private lateinit var database: AppDatabase
     private lateinit var syncManager: SyncManager
-    private val exerciseSets = mutableListOf<ExerciseSet>()
     private var isSyncing = false
-    private lateinit var adapter: ExerciseSetAdapter // Define adapter as a class property
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        progressManager = ProgressManager(this)
         database = AppDatabase.getDatabase(this)
         syncManager = SyncManager(this)
 
         setupToolbar()
         setupNavigationDrawer()
-        setupRecyclerView() // This will now work correctly
-        loadExerciseSets()
+        setupContinueButton()
         updateStatistics()
+    }
+
+    private fun setupContinueButton() {
+        binding.continueButton.setOnClickListener {
+            startRandomExercise()
+        }
     }
 
     private fun setupToolbar() {
@@ -94,6 +93,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_random_exercise -> {
                 startRandomExercise()
+            }
+            R.id.nav_articles -> {
+                startActivity(Intent(this, ArticleBrowseActivity::class.java))
             }
             R.id.nav_progress_overview -> {
                 startActivity(Intent(this, ProgressOverviewActivity::class.java))
@@ -139,7 +141,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         "${result.newExercisesCount} exercises, " +
                         "${result.newTextsCount} texts"
                 Snackbar.make(binding.root, message, Snackbar.LENGTH_LONG).show()
-                loadExerciseSets()
                 updateStatistics()
             } else {
                 Snackbar.make(
@@ -178,6 +179,37 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    private fun startRandomArticleExercise() {
+        lifecycleScope.launch {
+            val allExercises = database.exerciseDao().getAllExercises().first()
+            val allProgress = database.userProgressDao().getAllProgress().first()
+
+            // Create a set of solved exercise IDs (where isCorrect = true)
+            val solvedExerciseIds = allProgress.filter { it.isCorrect }.map { it.exerciseId }.toSet()
+
+            // Filter to only unsolved article exercises (B1+ level)
+            val unsolvedArticles = allExercises.filter {
+                it.id !in solvedExerciseIds &&
+                it.type == "article" &&
+                (it.level == "B1" || it.level == "B2" || it.level == "C1" || it.level == "C2")
+            }
+
+            if (unsolvedArticles.isNotEmpty()) {
+                val randomArticle = unsolvedArticles.random()
+                // Create a temporary exercise set with 1 article exercise
+                val tempSet = ExerciseSet(
+                    id = "article_${randomArticle.id}",
+                    title = "Article Exercise",
+                    description = "Level: ${randomArticle.level ?: "B1+"}",
+                    exercises = listOfNotNull(convertEntityToExercise(randomArticle))
+                )
+                startExerciseSet(tempSet)
+            } else {
+                Toast.makeText(this@MainActivity, "No article exercises available yet!", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
     private fun updateStatistics() {
         lifecycleScope.launch {
             val totalExercises = database.exerciseDao().getExerciseCount().first()
@@ -191,53 +223,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             binding.statsTextView.text = "Solved: $correctExercises / $totalExercises"
             binding.statsProgressBar.progress = percentage
-        }
-    }
-
-    // STABLE VERSION of setupRecyclerView
-    private fun setupRecyclerView() {
-        adapter = ExerciseSetAdapter(exerciseSets) { exerciseSet ->
-            startExerciseSet(exerciseSet)
-        }
-        binding.exerciseSetsRecyclerView.layoutManager = LinearLayoutManager(this)
-        binding.exerciseSetsRecyclerView.adapter = adapter
-    }
-
-    private fun loadExerciseSets() {
-        lifecycleScope.launch {
-            exerciseSets.clear()
-
-            val dbExerciseCount = database.exerciseDao().getExerciseCount().first()
-
-            if (dbExerciseCount > 0) {
-                val dbExercises = database.exerciseDao().getAllExercises().first()
-                val exercises = dbExercises.mapNotNull { entity ->
-                    convertEntityToExercise(entity)
-                }
-
-                if (exercises.isNotEmpty()) {
-                    exerciseSets.add(ExerciseSet(
-                        id = "all_exercises",
-                        title = "Progress",
-                        description = "${exercises.size} exercises",
-                        exercises = exercises
-                    ))
-                }
-            } else {
-                exerciseSets.addAll(createSampleExerciseSets())
-            }
-
-            exerciseSets.forEach { progressManager.loadProgressForSet(it) }
-
-            if (exerciseSets.isEmpty()) {
-                binding.emptyStateTextView.visibility = View.VISIBLE
-                binding.exerciseSetsRecyclerView.visibility = View.GONE
-            } else {
-                binding.emptyStateTextView.visibility = View.GONE
-                binding.exerciseSetsRecyclerView.visibility = View.VISIBLE
-            }
-
-            adapter.notifyDataSetChanged()
         }
     }
 
@@ -256,25 +241,29 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         is Int -> c
                         else -> return null
                     }
+                    val explanation = dataMap["explanation"] as? String
                     MultipleChoiceExercise(
                         id = entity.id,
                         question = entity.question,
                         options = options,
                         correctAnswerIndex = correct,
                         textId = entity.textId,
-                        level = entity.level
+                        level = entity.level,
+                        explanation = explanation
                     )
                 }
                 "write_word" -> {
                     val correct = dataMap["correct"] as? String ?: return null
                     val hint = dataMap["hint"] as? String
+                    val explanation = dataMap["explanation"] as? String
                     FillInTheBlankExercise(
                         id = entity.id,
                         question = entity.question,
                         correctAnswer = correct,
                         hint = hint,
                         textId = entity.textId,
-                        level = entity.level
+                        level = entity.level,
+                        explanation = explanation
                     )
                 }
                 "match_pairs" -> {
@@ -283,6 +272,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     val leftItems = pairsData.map { it["left"] ?: "" }
                     val rightItems = pairsData.map { it["right"] ?: "" }
                     val correctPairs = leftItems.indices.associateWith { it }
+                    val explanation = dataMap["explanation"] as? String
                     MatchPairsExercise(
                         id = entity.id,
                         question = entity.question,
@@ -290,7 +280,52 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         rightItems = rightItems,
                         correctPairs = correctPairs,
                         textId = entity.textId,
-                        level = entity.level
+                        level = entity.level,
+                        explanation = explanation
+                    )
+                }
+                "article" -> {
+                    @Suppress("UNCHECKED_CAST")
+                    val subExercisesData = dataMap["subExercises"] as? List<Map<String, Any>> ?: return null
+
+                    val subExercises = subExercisesData.mapNotNull { subData ->
+                        val subType = subData["type"] as? String
+                        val subQuestion = subData["question"] as? String ?: return@mapNotNull null
+
+                        when (subType) {
+                            "multiple_choice" -> {
+                                @Suppress("UNCHECKED_CAST")
+                                val options = subData["options"] as? List<String> ?: return@mapNotNull null
+                                val correctIndex = when (val c = subData["correctIndex"]) {
+                                    is Double -> c.toInt()
+                                    is Int -> c
+                                    else -> return@mapNotNull null
+                                }
+                                ArticleSubExercise.MultipleChoice(
+                                    question = subQuestion,
+                                    options = options,
+                                    correctIndex = correctIndex
+                                )
+                            }
+                            "open_ended" -> {
+                                val correctAnswer = subData["correctAnswer"] as? String ?: return@mapNotNull null
+                                ArticleSubExercise.OpenEnded(
+                                    question = subQuestion,
+                                    correctAnswer = correctAnswer
+                                )
+                            }
+                            else -> null
+                        }
+                    }
+
+                    val explanation = dataMap["explanation"] as? String
+                    ArticleExercise(
+                        id = entity.id,
+                        question = entity.question,
+                        subExercises = subExercises,
+                        textId = entity.textId,
+                        level = entity.level,
+                        explanation = explanation
                     )
                 }
                 else -> null
@@ -311,51 +346,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onResume() {
         super.onResume()
-        loadExerciseSets()
         updateStatistics()
-    }
-
-    private fun createSampleExerciseSets(): List<ExerciseSet> {
-        // This function remains the same
-        return listOf(
-            ExerciseSet(
-                id = "set1",
-                title = "Basic Greetings",
-                description = "Learn how to greet people in Danish",
-                exercises = listOf(
-                    MultipleChoiceExercise(
-                        id = "set1_mc1",
-                        question = "What is 'Hello' in Danish?",
-                        options = listOf("Hej", "Tak", "Farvel", "Undskyld"),
-                        correctAnswerIndex = 0
-                    ),
-                    FillInTheBlankExercise(
-                        id = "set1_fb1",
-                        question = "How do you say 'Good morning' in Danish?",
-                        correctAnswer = "Godmorgen",
-                        hint = "It's similar to English"
-                    ),
-                    MultipleChoiceExercise(
-                        id = "set1_mc2",
-                        question = "What is 'Goodbye' in Danish?",
-                        options = listOf("Hej", "Tak", "Farvel", "Hej hej"),
-                        correctAnswerIndex = 2
-                    )
-                )
-            ),
-            ExerciseSet(
-                id = "set2",
-                title = "Common Phrases",
-                description = "Learn essential Danish phrases",
-                exercises = listOf(
-                    FillInTheBlankExercise(
-                        id = "set2_fb1",
-                        question = "How do you say 'Thank you' in Danish?",
-                        correctAnswer = "Tak",
-                        hint = "A short and common word"
-                    )
-                )
-            )
-        )
     }
 }

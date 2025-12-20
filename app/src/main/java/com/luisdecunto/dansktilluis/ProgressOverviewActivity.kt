@@ -47,8 +47,12 @@ class ProgressOverviewActivity : AppCompatActivity() {
         // Create a map of exerciseId to progress
         val progressMap = allProgress.associateBy { it.exerciseId }
 
-        // Group exercises by level
-        val exercisesByLevel = allExercises.groupBy { it.level ?: "Unknown" }
+        // Separate articles from regular exercises
+        val articles = allExercises.filter { it.type == "article" }
+        val regularExercises = allExercises.filter { it.type != "article" }
+
+        // Group regular exercises by level
+        val exercisesByLevel = regularExercises.groupBy { it.level ?: "Unknown" }
 
         // Setup grids for each level
         setupLevelGrid(
@@ -80,6 +84,13 @@ class ProgressOverviewActivity : AppCompatActivity() {
             exercisesByLevel["C1"] ?: emptyList(),
             progressMap
         )
+
+        // Setup articles grid
+        setupLevelGrid(
+            binding.articlesGrid,
+            articles,
+            progressMap
+        )
     }
 
     private fun setupLevelGrid(
@@ -88,13 +99,34 @@ class ProgressOverviewActivity : AppCompatActivity() {
         progressMap: Map<String, UserProgressEntity>
     ) {
         recyclerView.layoutManager = GridLayoutManager(this, 10) // 10 cubes per row
-        recyclerView.adapter = ExerciseCubeAdapter(exercises, progressMap)
+        recyclerView.adapter = ExerciseCubeAdapter(exercises, progressMap) { exerciseId ->
+            openExercise(exerciseId)
+        }
+    }
+
+    private fun openExercise(exerciseId: String) {
+        val intent = android.content.Intent(this, ExerciseActivity::class.java)
+        intent.putExtra("EXERCISE_SET_ID", "single_$exerciseId")
+        intent.putExtra("EXERCISE_ID", exerciseId)
+        intent.putExtra("EXERCISE_SET_TITLE", "Exercise")
+        intent.putExtra("EXERCISE_SET_DESCRIPTION", "")
+        intent.putExtra("RETURN_TO_PROGRESS", true)
+        startActivity(intent)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Reload progress when returning from exercise
+        lifecycleScope.launch {
+            loadProgressOverview()
+        }
     }
 
     // Adapter for the exercise cubes
     private class ExerciseCubeAdapter(
         private val exercises: List<com.luisdecunto.dansktilluis.database.entities.ExerciseEntity>,
-        private val progressMap: Map<String, UserProgressEntity>
+        private val progressMap: Map<String, UserProgressEntity>,
+        private val onExerciseClick: (String) -> Unit
     ) : RecyclerView.Adapter<ExerciseCubeAdapter.CubeViewHolder>() {
 
         class CubeViewHolder(val binding: ItemExerciseCubeBinding) :
@@ -125,6 +157,11 @@ class ProgressOverviewActivity : AppCompatActivity() {
             }
 
             holder.binding.exerciseCube.setCardBackgroundColor(backgroundColor)
+
+            // Set click listener
+            holder.binding.exerciseCube.setOnClickListener {
+                onExerciseClick(exercise.id)
+            }
         }
 
         override fun getItemCount(): Int = exercises.size

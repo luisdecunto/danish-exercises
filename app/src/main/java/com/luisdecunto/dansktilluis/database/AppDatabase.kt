@@ -17,7 +17,7 @@ import com.luisdecunto.dansktilluis.database.entities.UserProgressEntity
         ExerciseEntity::class,
         UserProgressEntity::class
     ],
-    version = 3,
+    version = 5,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

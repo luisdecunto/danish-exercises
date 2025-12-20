@@ -20,8 +20,14 @@ data class TextJson(
     @SerializedName("id")
     val id: String,
 
+    @SerializedName("type")
+    val type: String?,  // "text" or "article", defaults to "text" if not specified
+
     @SerializedName("title")
     val title: String,
+
+    @SerializedName("pompadour")
+    val pompadour: String?,  // Subtitle/lead (for articles)
 
     @SerializedName("content")
     val content: String,
@@ -39,7 +45,7 @@ data class ExerciseJson(
     val id: String,
 
     @SerializedName("type")
-    val type: String,  // "multiple_choice", "write_word", "match_pairs"
+    val type: String,  // "multiple_choice", "write_word", "match_pairs", "article"
 
     @SerializedName("text_id")
     val textId: String?,
@@ -69,7 +75,11 @@ data class ExerciseJson(
 
     // Match Pairs fields
     @SerializedName("pairs")
-    val pairs: List<PairJson>?
+    val pairs: List<PairJson>?,
+
+    // Article fields (article text is referenced via text_id)
+    @SerializedName("subExercises")
+    val subExercises: List<SubExerciseJson>?
 )
 
 /**
@@ -81,4 +91,26 @@ data class PairJson(
 
     @SerializedName("right")
     val right: String
+)
+
+/**
+ * Sub-exercise object for article exercises
+ */
+data class SubExerciseJson(
+    @SerializedName("type")
+    val type: String,  // "multiple_choice" or "open_ended"
+
+    @SerializedName("question")
+    val question: String,
+
+    // Multiple Choice sub-exercise fields
+    @SerializedName("options")
+    val options: List<String>?,
+
+    @SerializedName("correctIndex")
+    val correctIndex: Int?,
+
+    // Open Ended sub-exercise fields
+    @SerializedName("correctAnswer")
+    val correctAnswer: String?
 )

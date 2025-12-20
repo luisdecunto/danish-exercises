@@ -8,12 +8,14 @@ import com.google.gson.Gson
 import com.luisdecunto.dansktilluis.database.AppDatabase
 import com.luisdecunto.dansktilluis.database.entities.ExerciseEntity
 import com.luisdecunto.dansktilluis.databinding.ActivityExerciseBinding
+import com.luisdecunto.dansktilluis.models.ArticleExercise
 import com.luisdecunto.dansktilluis.models.Exercise
 import com.luisdecunto.dansktilluis.models.ExerciseSet
 import com.luisdecunto.dansktilluis.models.FillInTheBlankExercise
 import com.luisdecunto.dansktilluis.models.MatchPairsExercise
 import com.luisdecunto.dansktilluis.models.MultipleChoiceExercise
 import com.luisdecunto.dansktilluis.storage.ProgressManager
+import com.luisdecunto.dansktilluis.ui.ArticleFragment
 import com.luisdecunto.dansktilluis.ui.FillInTheBlankFragment
 import com.luisdecunto.dansktilluis.ui.MatchPairsFragment
 import com.luisdecunto.dansktilluis.ui.MultipleChoiceFragment
@@ -36,12 +38,23 @@ class ExerciseActivity : AppCompatActivity() {
         progressManager = ProgressManager(this)
         database = AppDatabase.getDatabase(this)
 
+        // Setup Next button
+        binding.nextButton.setOnClickListener {
+            loadNextExercise()
+        }
+
         // Load exercise set from intent extras
         val exerciseSetId = intent.getStringExtra("EXERCISE_SET_ID")
+        val specificExerciseId = intent.getStringExtra("EXERCISE_ID")
         val exerciseSetTitle = intent.getStringExtra("EXERCISE_SET_TITLE") ?: "Exercises"
         val exerciseSetDescription = intent.getStringExtra("EXERCISE_SET_DESCRIPTION") ?: ""
 
-        if (exerciseSetId != null) {
+        if (specificExerciseId != null) {
+            // Load a specific exercise by ID
+            lifecycleScope.launch {
+                loadSpecificExercise(specificExerciseId, exerciseSetTitle, exerciseSetDescription)
+            }
+        } else if (exerciseSetId != null) {
             // Load exercises from database for this set
             lifecycleScope.launch {
                 loadExerciseSetFromDatabase(exerciseSetId, exerciseSetTitle, exerciseSetDescription)
@@ -51,6 +64,38 @@ class ExerciseActivity : AppCompatActivity() {
             exerciseSet = createSampleExerciseSet()
             progressManager.loadProgressForSet(exerciseSet)
             loadCurrentExercise()
+        }
+    }
+
+    private suspend fun loadSpecificExercise(exerciseId: String, title: String, description: String) {
+        val dbExercises = database.exerciseDao().getAllExercises().first()
+        val dbTexts = database.textDao().getAllTexts().first()
+
+        val exerciseEntity = dbExercises.find { it.id == exerciseId }
+        if (exerciseEntity != null) {
+            val exercise = convertEntityToExercise(exerciseEntity)
+
+            // Attach text if exercise has a textId
+            if (exercise != null && exerciseEntity.textId != null) {
+                val text = dbTexts.find { it.id == exerciseEntity.textId }
+                if (text != null) {
+                    exercise.textId = text.id
+                    exercise.textTitle = text.title
+                    exercise.textPompadour = text.pompadour
+                    exercise.textContent = text.content
+                }
+            }
+
+            if (exercise != null) {
+                exerciseSet = ExerciseSet(
+                    id = "single_$exerciseId",
+                    title = title,
+                    description = description,
+                    exercises = listOf(exercise)
+                )
+                progressManager.loadProgressForSet(exerciseSet)
+                loadCurrentExercise()
+            }
         }
     }
 
@@ -68,6 +113,7 @@ class ExerciseActivity : AppCompatActivity() {
                 if (text != null) {
                     exercise.textId = text.id
                     exercise.textTitle = text.title
+                    exercise.textPompadour = text.pompadour
                     exercise.textContent = text.content
                 }
             }
@@ -75,11 +121,11 @@ class ExerciseActivity : AppCompatActivity() {
             exercise
         }
 
-        // Pick 3 random exercises (or fewer if database has less than 3)
-        val selectedExercises = if (allExercises.size > 3) {
-            allExercises.shuffled().take(3)
+        // Pick 1 random exercise
+        val selectedExercises = if (allExercises.isNotEmpty()) {
+            listOf(allExercises.random())
         } else {
-            allExercises
+            emptyList()
         }
 
         exerciseSet = ExerciseSet(
@@ -107,25 +153,29 @@ class ExerciseActivity : AppCompatActivity() {
                         is Int -> c
                         else -> return null
                     }
+                    val explanation = dataMap["explanation"] as? String
 
                     MultipleChoiceExercise(
                         id = entity.id,
                         question = entity.question,
                         options = options,
                         correctAnswerIndex = correct,
-                        level = entity.level
+                        level = entity.level,
+                        explanation = explanation
                     )
                 }
                 "write_word" -> {
                     val correct = dataMap["correct"] as? String ?: return null
                     val hint = dataMap["hint"] as? String
+                    val explanation = dataMap["explanation"] as? String
 
                     FillInTheBlankExercise(
                         id = entity.id,
                         question = entity.question,
                         correctAnswer = correct,
                         hint = hint,
-                        level = entity.level
+                        level = entity.level,
+                        explanation = explanation
                     )
                 }
                 "match_pairs" -> {
@@ -137,6 +187,7 @@ class ExerciseActivity : AppCompatActivity() {
 
                     // Create correct pairs mapping (index to index)
                     val correctPairs = leftItems.indices.associateWith { it }
+                    val explanation = dataMap["explanation"] as? String
 
                     MatchPairsExercise(
                         id = entity.id,
@@ -144,7 +195,8 @@ class ExerciseActivity : AppCompatActivity() {
                         leftItems = leftItems,
                         rightItems = rightItems,
                         correctPairs = correctPairs,
-                        level = entity.level
+                        level = entity.level,
+                        explanation = explanation
                     )
                 }
                 else -> null
@@ -156,6 +208,10 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun loadCurrentExercise() {
+        // Hide explanation and Next button when loading a new exercise
+        binding.explanationCard.visibility = android.view.View.GONE
+        binding.nextButton.visibility = android.view.View.GONE
+
         if (currentExerciseIndex < exerciseSet.exercises.size) {
             val exercise = exerciseSet.exercises[currentExerciseIndex]
             updateProgress()
@@ -176,6 +232,14 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun displayExercise(exercise: Exercise) {
+        // Setup article drawer if exercise has text content
+        if (exercise.textContent != null && exercise.textContent!!.isNotEmpty()) {
+            setupArticleDrawer(exercise)
+        } else {
+            // Hide drawer if no article text
+            binding.drawerLayout.setDrawerLockMode(androidx.drawerlayout.widget.DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+        }
+
         val fragment = when (exercise) {
             is MultipleChoiceExercise -> MultipleChoiceFragment.newInstance(exercise) { isCorrect ->
                 onExerciseCompleted(exercise, isCorrect)
@@ -186,11 +250,34 @@ class ExerciseActivity : AppCompatActivity() {
             is MatchPairsExercise -> MatchPairsFragment.newInstance(exercise) { isCorrect ->
                 onExerciseCompleted(exercise, isCorrect)
             }
+            is ArticleExercise -> ArticleFragment.newInstance(exercise) { isCorrect ->
+                onExerciseCompleted(exercise, isCorrect)
+            }
         }
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.exerciseContainer, fragment)
             .commit()
+    }
+
+    private fun setupArticleDrawer(exercise: Exercise) {
+        // Enable the drawer
+        binding.drawerLayout.setDrawerLockMode(androidx.drawerlayout.widget.DrawerLayout.LOCK_MODE_UNLOCKED)
+
+        // Populate drawer with article content
+        binding.drawerArticleTitleTextView.text = exercise.textTitle ?: ""
+        binding.drawerArticleContentTextView.text = exercise.textContent ?: ""
+
+        // Show pompadour if available
+        if (!exercise.textPompadour.isNullOrEmpty()) {
+            binding.drawerArticlePompadourTextView.text = exercise.textPompadour
+            binding.drawerArticlePompadourTextView.visibility = android.view.View.VISIBLE
+        } else {
+            binding.drawerArticlePompadourTextView.visibility = android.view.View.GONE
+        }
+
+        // Enable swipe from right edge to open drawer
+        binding.drawerLayout.setDrawerLockMode(androidx.drawerlayout.widget.DrawerLayout.LOCK_MODE_UNLOCKED, androidx.core.view.GravityCompat.END)
     }
 
     private fun onExerciseCompleted(exercise: Exercise, isCorrect: Boolean) {
@@ -210,11 +297,67 @@ class ExerciseActivity : AppCompatActivity() {
             database.userProgressDao().insert(progressEntity)
         }
 
-        // Move to next exercise after a short delay
-        binding.root.postDelayed({
-            currentExerciseIndex++
-            loadCurrentExercise()
-        }, 1500)
+        // Show explanation and Next button
+        if (exercise.explanation != null && exercise.explanation!!.isNotEmpty()) {
+            binding.explanationText.text = exercise.explanation
+            binding.explanationCard.visibility = android.view.View.VISIBLE
+        }
+        binding.nextButton.visibility = android.view.View.VISIBLE
+    }
+
+    private fun loadNextExercise() {
+        // Check if we should return to progress overview
+        val returnToProgress = intent.getBooleanExtra("RETURN_TO_PROGRESS", false)
+
+        if (returnToProgress) {
+            // Just finish and return to progress overview
+            finish()
+            return
+        }
+
+        // Hide explanation and Next button
+        binding.explanationCard.visibility = android.view.View.GONE
+        binding.nextButton.visibility = android.view.View.GONE
+
+        // Load a new random unsolved exercise
+        lifecycleScope.launch {
+            val allExercises = database.exerciseDao().getAllExercises().first()
+            val allProgress = database.userProgressDao().getAllProgress().first()
+            val solvedExerciseIds = allProgress.filter { it.isCorrect }.map { it.exerciseId }.toSet()
+            val unsolvedExercises = allExercises.filter { it.id !in solvedExerciseIds }
+
+            if (unsolvedExercises.isNotEmpty()) {
+                val randomExercise = unsolvedExercises.random()
+                val exercise = convertEntityToExercise(randomExercise)
+
+                if (exercise != null) {
+                    // Attach text if needed
+                    if (randomExercise.textId != null) {
+                        val texts = database.textDao().getAllTexts().first()
+                        val text = texts.find { it.id == randomExercise.textId }
+                        if (text != null) {
+                            exercise.textId = text.id
+                            exercise.textTitle = text.title
+                            exercise.textPompadour = text.pompadour
+                            exercise.textContent = text.content
+                        }
+                    }
+
+                    exerciseSet = ExerciseSet(
+                        id = "random_${exercise.id}",
+                        title = "Random Exercise",
+                        description = "Level: ${exercise.level ?: "Unknown"}",
+                        exercises = listOf(exercise)
+                    )
+                    currentExerciseIndex = 0
+                    progressManager.loadProgressForSet(exerciseSet)
+                    loadCurrentExercise()
+                }
+            } else {
+                Toast.makeText(this@ExerciseActivity, "All exercises completed! Great job!", Toast.LENGTH_LONG).show()
+                finish()
+            }
+        }
     }
 
     private fun updateProgress() {

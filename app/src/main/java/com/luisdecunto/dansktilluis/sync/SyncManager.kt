@@ -65,7 +65,9 @@ class SyncManager(context: Context) {
             val textEntities = databaseJson.texts.values.map { textJson ->
                 TextEntity(
                     id = textJson.id,
+                    type = textJson.type ?: "text",  // Default to "text" if not specified
                     title = textJson.title,
+                    pompadour = textJson.pompadour,
                     content = textJson.content,
                     translation = textJson.translation
                 )
@@ -125,9 +127,26 @@ class SyncManager(context: Context) {
                 dataMap["correct"] = exerciseJson.correct
                 dataMap["accept_variants"] = exerciseJson.acceptVariants
                 dataMap["hint"] = exerciseJson.hint
+                dataMap["explanation"] = exerciseJson.explanation
             }
             "match_pairs" -> {
                 dataMap["pairs"] = exerciseJson.pairs
+                dataMap["explanation"] = exerciseJson.explanation
+            }
+            "article" -> {
+                dataMap["explanation"] = exerciseJson.explanation
+
+                // Convert SubExerciseJson to Map format for storage
+                val subExercisesData = exerciseJson.subExercises?.map { subEx ->
+                    mapOf(
+                        "type" to subEx.type,
+                        "question" to subEx.question,
+                        "options" to subEx.options,
+                        "correctIndex" to subEx.correctIndex,
+                        "correctAnswer" to subEx.correctAnswer
+                    )
+                }
+                dataMap["subExercises"] = subExercisesData
             }
         }
 
