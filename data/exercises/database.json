@@ -59,6 +59,126 @@
       "title": "Transportation",
       "content": "Jeg tager bussen til arbejde. Min kone kører bil. Vores børn cykler til skole, fordi det er sundt.",
       "translation": "I take the bus to work. My wife drives a car. Our children cycle to school because it is healthy."
+    },
+    "text_011": {
+      "id": "text_011",
+      "title": "Job Interview",
+      "content": "Sara er til jobsamtale i en stor virksomhed. Hun er nervøs, men godt forberedt. Intervieweren spørger om hendes erfaring og styrker. Sara forklarer, at hun er meget organiseret og arbejder godt i teams. Hun nævner også, at hun kan tale tre sprog: dansk, engelsk og spansk. Efter samtalen føler Sara sig optimistisk om sine chancer.",
+      "translation": "Sara is at a job interview at a large company. She is nervous but well prepared. The interviewer asks about her experience and strengths. Sara explains that she is very organized and works well in teams. She also mentions that she can speak three languages: Danish, English and Spanish. After the interview, Sara feels optimistic about her chances."
+    },
+    "text_012": {
+      "id": "text_012",
+      "title": "At the Market",
+      "content": "Hver lørdag går Morten på det lokale marked for at købe friske grøntsager. I dag køber han tomater, agurker og løg til en salat. Sælgeren fortæller ham, at tomaterne er økologiske og kommer direkte fra en lokal gård. Morten beslutter også at købe nogle æbler, selvom de er lidt dyrere end i supermarkedet. Han kan lide at støtte lokale producenter.",
+      "translation": "Every Saturday, Morten goes to the local market to buy fresh vegetables. Today he buys tomatoes, cucumbers and onions for a salad. The seller tells him that the tomatoes are organic and come directly from a local farm. Morten also decides to buy some apples, even though they are a bit more expensive than in the supermarket. He likes to support local producers."
+    },
+    "text_013": {
+      "id": "text_013",
+      "title": "Doctor's Appointment",
+      "content": "Lise har ondt i halsen og skal til læge. Lægen undersøger hende og konkluderer, at hun har en halsbetændelse. Han udskriver antibiotika og råder hende til at hvile sig i tre dage. Lise spørger, om hun må gå på arbejde, men lægen siger, at det er bedre at blive hjemme for ikke at smitte kollegerne. Lise lover at følge lægens råd.",
+      "translation": "Lise has a sore throat and needs to see a doctor. The doctor examines her and concludes that she has a throat infection. He prescribes antibiotics and advises her to rest for three days. Lise asks if she can go to work, but the doctor says it's better to stay home so as not to infect colleagues. Lise promises to follow the doctor's advice."
+    },
+    "text_014": {
+      "id": "text_014",
+      "title": "Danish Hygge",
+      "content": "Hygge er en vigtig del af dansk kultur. Det handler om at skabe en hyggelig og tryg atmosfære. Om vinteren tænder danskerne mange lys og stearinlys. De drikker varm kakao eller te og nyder tid med familie og venner. Hygge kan også være at læse en god bog under et varmt tæppe. Mange udlændinge synes, at hygge er en af de bedste ting ved Danmark.",
+      "translation": "Hygge is an important part of Danish culture. It's about creating a cozy and safe atmosphere. In winter, Danes light many lights and candles. They drink hot cocoa or tea and enjoy time with family and friends. Hygge can also be reading a good book under a warm blanket. Many foreigners think that hygge is one of the best things about Denmark."
+    },
+    "text_015": {
+      "id": "text_015",
+      "title": "Environmental Concerns",
+      "content": "Danmark arbejder hårdt for at beskytte miljøet. Regeringen har sat ambitiøse mål for at reducere CO2-udledningen. Mange danskere cykler i stedet for at køre bil, hvilket er godt for både miljøet og sundheden. Vindmøller producerer en stor del af landets elektricitet. Derudover sorterer de fleste borgere deres affald for at fremme genbrug. Disse tiltag viser, at Danmark tager klimaforandringer alvorligt.",
+      "translation": "Denmark works hard to protect the environment. The government has set ambitious goals to reduce CO2 emissions. Many Danes cycle instead of driving, which is good for both the environment and health. Wind turbines produce a large part of the country's electricity. In addition, most citizens sort their waste to promote recycling. These measures show that Denmark takes climate change seriously."
+    },
+    "text_016": {
+      "id": "text_016",
+      "title": "Planning a Trip",
+      "content": "Emma og hendes kæreste planlægger en ferie til Italien. De vil gerne besøge Rom, Firenze og Venedig. Emma foretrækker at bo på små hoteller, mens hendes kæreste synes, at Airbnb er billigere og mere autentisk. De bliver enige om at prøve begge dele. Emma begynder at researche seværdigheder og restauranter. Hun glæder sig især til at se Colosseum og smage ægte italiensk pizza.",
+      "translation": "Emma and her boyfriend are planning a vacation to Italy. They want to visit Rome, Florence and Venice. Emma prefers to stay at small hotels, while her boyfriend thinks Airbnb is cheaper and more authentic. They agree to try both. Emma starts researching attractions and restaurants. She's especially looking forward to seeing the Colosseum and tasting real Italian pizza."
+    },
+    "text_017": {
+      "id": "text_017",
+      "title": "Technology and Life",
+      "content": "Smartphones har ændret vores hverdag markant. Vi bruger dem til kommunikation, navigation, shopping og underholdning. Mange unge mennesker kan ikke forestille sig et liv uden deres telefon. Dog advarer eksperter om, at for meget skærmtid kan være skadeligt for mental sundhed. Det er vigtigt at finde en balance mellem det digitale og det virkelige liv. Nogle familier har indført 'telefonfri zoner' ved middagsbordet.",
+      "translation": "Smartphones have changed our daily lives significantly. We use them for communication, navigation, shopping and entertainment. Many young people cannot imagine life without their phone. However, experts warn that too much screen time can be harmful to mental health. It's important to find a balance between digital and real life. Some families have introduced 'phone-free zones' at the dinner table."
+    },
+    "text_018": {
+      "id": "text_018",
+      "title": "University Studies",
+      "content": "Michael studerer økonomi på Københavns Universitet. Han er i sit andet år og finder studiet både udfordrende og interessant. Selvom forelæsningerne er krævende, nyder han at diskutere økonomiske teorier med sine medstuderende. Michael overvejer at tage et semester i udlandet, måske i Singapore eller USA. Han tror, at international erfaring vil være værdifuld for hans fremtidige karriere.",
+      "translation": "Michael studies economics at the University of Copenhagen. He's in his second year and finds the program both challenging and interesting. Although the lectures are demanding, he enjoys discussing economic theories with his fellow students. Michael is considering spending a semester abroad, perhaps in Singapore or the USA. He believes that international experience will be valuable for his future career."
+    },
+    "text_019": {
+      "id": "text_019",
+      "title": "Danish Christmas Traditions",
+      "content": "Jul er en meget speciel tid i Danmark. Familierne samles den 24. december for at fejre juleaften. Traditionen er at spise and eller flæskesteg med brune kartofler og rødkål. Efter middagen danser man rundt om juletræet og synger julesalmer. Børnene venter spændt på julemanden, som bringer gaverne. Mange danskere hygger sig også med en julekalender hver dag i december.",
+      "translation": "Christmas is a very special time in Denmark. Families gather on December 24th to celebrate Christmas Eve. The tradition is to eat duck or roast pork with caramelized potatoes and red cabbage. After dinner, people dance around the Christmas tree and sing carols. Children wait excitedly for Santa Claus, who brings the presents. Many Danes also enjoy an advent calendar every day in December."
+    },
+    "text_020": {
+      "id": "text_020",
+      "title": "Finding an Apartment",
+      "content": "At finde en lejlighed i København er en stor udfordring. Priserne er høje, og der er stor efterspørgsel. Thomas har søgt i flere måneder uden held. Han har været til mange fremvisninger, men der er altid mange andre interesserede. En ejendomsmægler råder ham til at være hurtig med at beslutte sig. Thomas overvejer nu at flytte til Frederiksberg eller Valby, hvor huslejen er lidt lavere.",
+      "translation": "Finding an apartment in Copenhagen is a big challenge. Prices are high and there is great demand. Thomas has been searching for several months without success. He has been to many viewings, but there are always many other interested parties. A real estate agent advises him to be quick to decide. Thomas is now considering moving to Frederiksberg or Valby, where the rent is slightly lower."
+    },
+    "text_021": {
+      "id": "text_021",
+      "title": "Work-Life Balance",
+      "content": "Danskere værdsætter work-life balance meget højt. De fleste virksomheder har fleksible arbejdstider, og det er normalt at forlade kontoret klokken 16 eller 17. Familietid betragtes som meget vigtig, og forældre bruger ofte fritiden sammen med deres børn. Desuden har danske arbejdere fem til seks ugers ferie om året. Denne balance bidrager til danskernes generelt høje livskvalitet og tilfredshed.",
+      "translation": "Danes value work-life balance very highly. Most companies have flexible working hours, and it's normal to leave the office at 4 or 5 pm. Family time is considered very important, and parents often spend leisure time with their children. In addition, Danish workers have five to six weeks of vacation per year. This balance contributes to Danes' generally high quality of life and satisfaction."
+    },
+    "text_022": {
+      "id": "text_022",
+      "title": "Climate Change Debate",
+      "content": "Klimaforandringer er et varmt debatemne i Danmark. Politikere diskuterer, hvordan landet kan blive CO2-neutralt inden 2050. Nogle foreslår højere grønne afgifter, mens andre mener, at teknologisk innovation er løsningen. Unge aktivister demonstrerer jævnligt for hurtigere handling. Forskere advarer om, at havstigningen kan true de danske kyster. Der er bred enighed om, at der skal handles nu, men uenighed om metoderne.",
+      "translation": "Climate change is a hot topic of debate in Denmark. Politicians discuss how the country can become CO2-neutral by 2050. Some propose higher green taxes, while others believe that technological innovation is the solution. Young activists regularly demonstrate for faster action. Scientists warn that sea level rise could threaten Danish coasts. There is broad agreement that action must be taken now, but disagreement about the methods."
+    },
+    "text_023": {
+      "id": "text_023",
+      "title": "The Public Library",
+      "content": "Det lokale bibliotek er mere end bare et sted at låne bøger. Det fungerer som et kulturelt center for hele samfundet. Her kan man deltage i foredrag, workshops og bogklubber. Biblioteket tilbyder også gratis internetadgang og hjælp til jobsøgning. Børn kan komme til eventyr-timer, hvor bibliotekarerne læser højt. Mange ældre bruger biblioteket som et socialt mødested. Det er et eksempel på, hvordan offentlige institutioner kan binde lokalsamfundet sammen.",
+      "translation": "The local library is more than just a place to borrow books. It functions as a cultural center for the entire community. Here you can participate in lectures, workshops and book clubs. The library also offers free internet access and help with job searching. Children can come to story hours where librarians read aloud. Many elderly people use the library as a social meeting place. It's an example of how public institutions can bring the local community together."
+    },
+    "text_024": {
+      "id": "text_024",
+      "title": "Danish Cuisine Evolution",
+      "content": "Dansk madkultur har ændret sig dramatisk i de seneste årtier. Traditionelt bestod den danske kost hovedsageligt af kød, kartofler og sovs. I dag eksperimenterer danskerne mere med internationale retter og sundere ingredienser. Nye nordiske køkken har gjort Danmark verdensberømt for gastronomisk innovation. Restauranter som Noma har vundet internationale priser. Samtidig er der fornyet interesse for traditionelle retter som smørrebrød og frikadeller, men med moderne twist.",
+      "translation": "Danish food culture has changed dramatically in recent decades. Traditionally, the Danish diet consisted mainly of meat, potatoes and gravy. Today, Danes experiment more with international dishes and healthier ingredients. New Nordic cuisine has made Denmark world-famous for gastronomic innovation. Restaurants like Noma have won international awards. At the same time, there is renewed interest in traditional dishes like smørrebrød and frikadeller, but with a modern twist."
+    },
+    "text_025": {
+      "id": "text_025",
+      "title": "The Cycling Infrastructure",
+      "content": "Københavns cykelkultur er verdensberømt. Byen har investeret massivt i cykelstier og cykelbro'er for at gøre det sikkert og bekvemt at cykle. Næsten halvdelen af alle københavnere cykler til arbejde eller studie dagligt, selv om vinteren. Cykelstier har forkørselsret mange steder, og der er separate trafiksignaler for cyklister. Andre byer rundt om i verden studerer København som et eksempel på bæredygtig bytransport.",
+      "translation": "Copenhagen's cycling culture is world famous. The city has invested massively in bike lanes and bicycle bridges to make cycling safe and convenient. Almost half of all Copenhageners cycle to work or study daily, even in winter. Bike lanes have right of way in many places, and there are separate traffic signals for cyclists. Other cities around the world study Copenhagen as an example of sustainable urban transport."
+    },
+    "text_026": {
+      "id": "text_026",
+      "title": "Social Welfare System",
+      "content": "Det danske velfærdssystem er et af de mest omfattende i verden. Staten tilbyder gratis sundhedspleje og uddannelse for alle borgere. Studerende modtager endda SU, en månedlig støtte mens de studerer. Systemet finansieres gennem høje skatter, men de fleste danskere accepterer dette, fordi de ser fordelene. Velfærdsstaten sikrer også arbejdsløshedsunderstøttelse og pensioner. Dog står systemet overfor udfordringer på grund af en aldrende befolkning.",
+      "translation": "The Danish welfare system is one of the most comprehensive in the world. The state offers free healthcare and education for all citizens. Students even receive SU, a monthly grant while studying. The system is financed through high taxes, but most Danes accept this because they see the benefits. The welfare state also ensures unemployment benefits and pensions. However, the system faces challenges due to an aging population."
+    },
+    "text_027": {
+      "id": "text_027",
+      "title": "Hans Christian Andersen",
+      "content": "Hans Christian Andersen er Danmarks mest berømte forfatter. Han blev født i Odense i 1805 og skrev over 150 eventyr, som er oversat til mere end 100 sprog. Hans mest kendte historier inkluderer 'Den lille havfrue', 'Den grimme ælling' og 'Snedronningen'. Selvom han skrev for børn, indeholder hans eventyr ofte dybe filosofiske budskaber. I dag fejres hans fødselsdag, den 2. april, som International Børnebogenes Dag. Andersens eventyr læses stadig af millioner af børn verden over.",
+      "translation": "Hans Christian Andersen is Denmark's most famous author. He was born in Odense in 1805 and wrote over 150 fairy tales, which have been translated into more than 100 languages. His most famous stories include 'The Little Mermaid', 'The Ugly Duckling' and 'The Snow Queen'. Although he wrote for children, his fairy tales often contain deep philosophical messages. Today, his birthday, April 2nd, is celebrated as International Children's Book Day. Andersen's fairy tales are still read by millions of children worldwide."
+    },
+    "text_028": {
+      "id": "text_028",
+      "title": "Danish Democracy",
+      "content": "Danmark er et parlamentarisk demokrati med en konstitutionel monark. Dronningen har primært ceremonielle opgaver, mens den egentlige magt ligger hos Folketinget og regeringen. Der afholdes valg mindst hvert fjerde år, og valgdeltagelsen er generelt høj, ofte over 80%. Danskere er stolte af deres demokratiske traditioner og ytringsfrihed. Politiske debatter er livlige, men generelt præget af respekt og kompromissøgning. Tilliden til demokratiske institutioner er blandt de højeste i verden.",
+      "translation": "Denmark is a parliamentary democracy with a constitutional monarch. The Queen has primarily ceremonial duties, while the real power lies with the Parliament and government. Elections are held at least every four years, and voter turnout is generally high, often over 80%. Danes are proud of their democratic traditions and freedom of speech. Political debates are lively but generally characterized by respect and compromise-seeking. Trust in democratic institutions is among the highest in the world."
+    },
+    "text_029": {
+      "id": "text_029",
+      "title": "Learning Danish Language",
+      "content": "Mange udlændinge finder dansk svært at lære. Udtalen er særlig udfordrende, da mange bogstaver ikke udtales, som man ville forvente. For eksempel siger danskerne 'rødgrød med fløde', som er næsten umuligt for ikke-danskere at udtale korrekt. Grammatikken er dog relativt simpel sammenlignet med mange andre sprog. Danskundervisning tilbydes gratis til indvandrere gennem sprogskoler. Selvom mange danskere taler godt engelsk, sætter de pris på, når udlændinge forsøger at tale dansk.",
+      "translation": "Many foreigners find Danish difficult to learn. The pronunciation is particularly challenging, as many letters are not pronounced as one would expect. For example, Danes say 'rødgrød med fløde', which is almost impossible for non-Danes to pronounce correctly. However, the grammar is relatively simple compared to many other languages. Danish language teaching is offered free to immigrants through language schools. Although many Danes speak good English, they appreciate when foreigners try to speak Danish."
+    },
+    "text_030": {
+      "id": "text_030",
+      "title": "Working Remotely",
+      "content": "Efter COVID-19 pandemien er fjernarbejde blevet mere almindeligt i Danmark. Mange virksomheder tilbyder nu hybride ordninger, hvor medarbejdere kan arbejde hjemmefra nogle dage om ugen. Dette giver større fleksibilitet og sparer pendlingstid. Dog savner nogle den sociale kontakt med kollegerne. Forskere undersøger, hvordan fjernarbejde påvirker produktivitet og trivsel. Mange forudser, at fremtidens arbejdsplads vil være en blanding af kontorarbejde og hjemmearbejde.",
+      "translation": "After the COVID-19 pandemic, remote work has become more common in Denmark. Many companies now offer hybrid arrangements where employees can work from home some days a week. This provides greater flexibility and saves commuting time. However, some miss the social contact with colleagues. Researchers are investigating how remote work affects productivity and well-being. Many predict that the workplace of the future will be a mix of office work and home work."
     }
   },
   "exercises": [
@@ -67,46 +187,46 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A1",
-      "question": "What is 'Hello' in Danish?",
+      "question": "Hvordan siger man 'Hello' på dansk?",
       "options": ["Hej", "Tak", "Farvel", "Undskyld"],
       "correct": 0,
-      "explanation": "Hej is the most common Danish greeting"
+      "explanation": "Hej er den mest almindelige danske hilsen"
     },
     {
       "id": "ex_002",
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'Thank you' in Danish?",
+      "question": "Hvordan siger man 'Thank you' på dansk?",
       "correct": "tak",
       "accept_variants": ["mange tak"],
-      "hint": "It's very short"
+      "hint": "Det er meget kort"
     },
     {
       "id": "ex_003",
       "type": "multiple_choice",
       "text_id": "text_002",
       "level": "A1",
-      "question": "According to the text, what does 'Hvordan har du det?' mean?",
+      "question": "Ifølge teksten, hvad betyder 'Hvordan har du det?'",
       "options": ["Hello", "How are you?", "Thank you", "Goodbye"],
       "correct": 1,
-      "explanation": "This is a common way to ask how someone is doing"
+      "explanation": "Dette er en almindelig måde at spørge hvordan nogen har det"
     },
     {
       "id": "ex_004",
       "type": "write_word",
       "text_id": "text_001",
       "level": "A1",
-      "question": "What day does the person go to the supermarket? (in Danish)",
+      "question": "Hvilken dag går personen i supermarkedet?",
       "correct": "onsdag",
-      "hint": "Look at 'hver onsdag' in the text"
+      "hint": "Se på 'hver onsdag' i teksten"
     },
     {
       "id": "ex_005",
       "type": "match_pairs",
       "text_id": null,
       "level": "A1",
-      "question": "Match the Danish words with their English translations",
+      "question": "Match de danske ord med deres engelske oversættelser",
       "pairs": [
         {"left": "mælk", "right": "milk"},
         {"left": "brød", "right": "bread"},
@@ -119,7 +239,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "A1",
-      "question": "Match the Danish greetings",
+      "question": "Match de danske hilsner",
       "pairs": [
         {"left": "Hej", "right": "Hello"},
         {"left": "Farvel", "right": "Goodbye"},
@@ -132,7 +252,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A1",
-      "question": "What is 'Goodbye' in Danish?",
+      "question": "Hvordan siger man 'Goodbye' på dansk?",
       "options": ["Hej", "Tak", "Farvel", "God morgen"],
       "correct": 2
     },
@@ -141,25 +261,25 @@
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'Yes' in Danish?",
+      "question": "Hvordan siger man 'Yes' på dansk?",
       "correct": "ja",
-      "hint": "Similar to German"
+      "hint": "Ligner tysk"
     },
     {
       "id": "ex_009",
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'No' in Danish?",
+      "question": "Hvordan siger man 'No' på dansk?",
       "correct": "nej",
-      "hint": "Starts with 'n'"
+      "hint": "Starter med 'n'"
     },
     {
       "id": "ex_010",
       "type": "multiple_choice",
       "text_id": "text_003",
       "level": "A1",
-      "question": "How many sisters does the person have?",
+      "question": "Hvor mange søstre har personen?",
       "options": ["One", "Two", "Three", "Four"],
       "correct": 1
     },
@@ -168,7 +288,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "A1",
-      "question": "Match the days of the week",
+      "question": "Match ugedagene",
       "pairs": [
         {"left": "mandag", "right": "Monday"},
         {"left": "tirsdag", "right": "Tuesday"},
@@ -181,16 +301,16 @@
       "type": "write_word",
       "text_id": "text_003",
       "level": "A1",
-      "question": "What is the father's name?",
+      "question": "Hvad hedder faren?",
       "correct": "Peter",
-      "hint": "Look in the text"
+      "hint": "Se i teksten"
     },
     {
       "id": "ex_013",
       "type": "multiple_choice",
       "text_id": null,
       "level": "A1",
-      "question": "What is 'Water' in Danish?",
+      "question": "Hvordan siger man 'Water' på dansk?",
       "options": ["vand", "mælk", "kaffe", "te"],
       "correct": 0
     },
@@ -199,17 +319,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'Good morning' in Danish?",
+      "question": "Hvordan siger man 'Good morning' på dansk?",
       "correct": "god morgen",
       "accept_variants": ["godmorgen"],
-      "hint": "Similar to English"
+      "hint": "Ligner engelsk"
     },
     {
       "id": "ex_015",
       "type": "match_pairs",
       "text_id": null,
       "level": "A1",
-      "question": "Match the numbers",
+      "question": "Match tallene",
       "pairs": [
         {"left": "en", "right": "one"},
         {"left": "to", "right": "two"},
@@ -222,7 +342,7 @@
       "type": "multiple_choice",
       "text_id": "text_004",
       "level": "A2",
-      "question": "What does the person learn at school?",
+      "question": "Hvad lærer personen i skolen?",
       "options": ["Only Danish", "Danish, math and English", "Only English", "Science and art"],
       "correct": 1
     },
@@ -231,16 +351,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'School' in Danish?",
+      "question": "Hvordan siger man 'School' på dansk?",
       "correct": "skole",
-      "hint": "Starts with 's'"
+      "hint": "Starter med 's'"
     },
     {
       "id": "ex_018",
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'Book' in Danish?",
+      "question": "Hvordan siger man 'Book' på dansk?",
       "options": ["bog", "bil", "bord", "stol"],
       "correct": 0
     },
@@ -249,7 +369,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match the colors",
+      "question": "Match farverne",
       "pairs": [
         {"left": "rød", "right": "red"},
         {"left": "blå", "right": "blue"},
@@ -262,16 +382,16 @@
       "type": "write_word",
       "text_id": "text_004",
       "level": "A2",
-      "question": "How does the text describe the teacher? (in Danish)",
+      "question": "Hvordan beskriver teksten læreren?",
       "correct": "venlig",
-      "hint": "It means 'friendly'"
+      "hint": "Det betyder 'friendly'"
     },
     {
       "id": "ex_021",
       "type": "multiple_choice",
       "text_id": "text_005",
       "level": "A2",
-      "question": "What will the weather be like tomorrow?",
+      "question": "Hvordan bliver vejret i morgen?",
       "options": ["Sunny and warm", "Cold and rainy", "Hot and dry", "Windy"],
       "correct": 1
     },
@@ -280,17 +400,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'Today' in Danish?",
+      "question": "Hvordan siger man 'Today' på dansk?",
       "correct": "i dag",
       "accept_variants": ["idag"],
-      "hint": "Two words"
+      "hint": "To ord"
     },
     {
       "id": "ex_023",
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match the family members",
+      "question": "Match familiemedlemmerne",
       "pairs": [
         {"left": "mor", "right": "mother"},
         {"left": "far", "right": "father"},
@@ -303,7 +423,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'House' in Danish?",
+      "question": "Hvordan siger man 'House' på dansk?",
       "options": ["hus", "have", "hund", "bil"],
       "correct": 0
     },
@@ -312,17 +432,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'Tomorrow' in Danish?",
+      "question": "Hvordan siger man 'Tomorrow' på dansk?",
       "correct": "i morgen",
       "accept_variants": ["imorgen"],
-      "hint": "Similar to 'good morning'"
+      "hint": "Ligner 'good morning'"
     },
     {
       "id": "ex_026",
       "type": "multiple_choice",
       "text_id": "text_006",
       "level": "A2",
-      "question": "What does the person do in the evening?",
+      "question": "Hvad laver personen om aftenen?",
       "options": ["Play football", "Read books or watch TV", "Swim", "Cycle"],
       "correct": 1
     },
@@ -331,16 +451,16 @@
       "type": "write_word",
       "text_id": "text_006",
       "level": "A2",
-      "question": "What sport does the person play in their free time? (in Danish)",
+      "question": "Hvilken sport spiller personen i sin fritid?",
       "correct": "fodbold",
-      "hint": "It's a popular sport"
+      "hint": "Det er en populær sport"
     },
     {
       "id": "ex_028",
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match the food items",
+      "question": "Match madvarerne",
       "pairs": [
         {"left": "smør", "right": "butter"},
         {"left": "æg", "right": "egg"},
@@ -353,7 +473,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'To eat' in Danish?",
+      "question": "Hvordan siger man 'To eat' på dansk?",
       "options": ["at spise", "at drikke", "at løbe", "at gå"],
       "correct": 0
     },
@@ -362,17 +482,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'I like' in Danish?",
+      "question": "Hvordan siger man 'I like' på dansk?",
       "correct": "jeg kan lide",
       "accept_variants": ["jeg kan godt lide"],
-      "hint": "It means 'I can like'"
+      "hint": "Det betyder bogstaveligt 'I can like'"
     },
     {
       "id": "ex_031",
       "type": "multiple_choice",
       "text_id": "text_007",
       "level": "B1",
-      "question": "What is Copenhagen?",
+      "question": "Hvad er København?",
       "options": ["A city", "Denmark's capital", "A park", "A building"],
       "correct": 1
     },
@@ -381,17 +501,17 @@
       "type": "write_word",
       "text_id": "text_007",
       "level": "B1",
-      "question": "How do people get around in Copenhagen? (in Danish)",
+      "question": "Hvordan kommer folk rundt i København?",
       "correct": "cykler",
       "accept_variants": ["de cykler", "cykle"],
-      "hint": "It's about cycling"
+      "hint": "Det handler om cykling"
     },
     {
       "id": "ex_033",
       "type": "match_pairs",
       "text_id": null,
       "level": "B1",
-      "question": "Match the places in the city",
+      "question": "Match stederne i byen",
       "pairs": [
         {"left": "bibliotek", "right": "library"},
         {"left": "hospital", "right": "hospital"},
@@ -404,7 +524,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What does 'smuk' mean?",
+      "question": "Hvad betyder 'smuk'?",
       "options": ["Beautiful", "Ugly", "Big", "Small"],
       "correct": 0
     },
@@ -413,16 +533,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'Capital' in Danish?",
+      "question": "Hvordan siger man 'Capital' på dansk?",
       "correct": "hovedstad",
-      "hint": "Compound word"
+      "hint": "Sammensat ord"
     },
     {
       "id": "ex_036",
       "type": "multiple_choice",
       "text_id": "text_008",
       "level": "B1",
-      "question": "What does the person want to order?",
+      "question": "Hvad vil personen gerne bestille?",
       "options": ["A sandwich", "A pizza and a coke", "A burger", "Coffee"],
       "correct": 1
     },
@@ -431,16 +551,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'How much does it cost?' in Danish?",
+      "question": "Hvordan siger man 'How much does it cost?' på dansk?",
       "correct": "hvad koster det",
-      "hint": "Start with 'hvad'"
+      "hint": "Start med 'hvad'"
     },
     {
       "id": "ex_038",
       "type": "match_pairs",
       "text_id": null,
       "level": "B1",
-      "question": "Match the verbs",
+      "question": "Match udsagnsordene",
       "pairs": [
         {"left": "at købe", "right": "to buy"},
         {"left": "at sælge", "right": "to sell"},
@@ -453,7 +573,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What is 'To work' in Danish?",
+      "question": "Hvordan siger man 'To work' på dansk?",
       "options": ["at arbejde", "at spise", "at sove", "at gå"],
       "correct": 0
     },
@@ -462,16 +582,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'I would like' in Danish?",
+      "question": "Hvordan siger man 'I would like' på dansk?",
       "correct": "jeg vil gerne",
-      "hint": "Used when politely requesting"
+      "hint": "Bruges når man høfligt beder om noget"
     },
     {
       "id": "ex_041",
       "type": "multiple_choice",
       "text_id": "text_009",
       "level": "B1",
-      "question": "What time does the person get up?",
+      "question": "Hvad tid står personen op?",
       "options": ["Six o'clock", "Seven o'clock", "Eight o'clock", "Nine o'clock"],
       "correct": 1
     },
@@ -480,17 +600,17 @@
       "type": "write_word",
       "text_id": "text_009",
       "level": "B1",
-      "question": "What does the person do after breakfast? (in Danish)",
+      "question": "Hvad gør personen efter morgenmad?",
       "correct": "børster mine tænder",
       "accept_variants": ["børster tænder"],
-      "hint": "Dental hygiene"
+      "hint": "Tandhygiejne"
     },
     {
       "id": "ex_043",
       "type": "match_pairs",
       "text_id": null,
       "level": "B1",
-      "question": "Match the time expressions",
+      "question": "Match tidsudtrykkene",
       "pairs": [
         {"left": "om morgenen", "right": "in the morning"},
         {"left": "om eftermiddagen", "right": "in the afternoon"},
@@ -503,7 +623,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What does 'derefter' mean?",
+      "question": "Hvad betyder 'derefter'?",
       "options": ["Before", "Then/after that", "Always", "Never"],
       "correct": 1
     },
@@ -512,16 +632,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'To get up' in Danish?",
+      "question": "Hvordan siger man 'To get up' på dansk?",
       "correct": "at stå op",
-      "hint": "Two words"
+      "hint": "To ord"
     },
     {
       "id": "ex_046",
       "type": "multiple_choice",
       "text_id": "text_010",
       "level": "B2",
-      "question": "Why do the children cycle to school?",
+      "question": "Hvorfor cykler børnene til skole?",
       "options": ["It's fun", "It's healthy", "It's fast", "It's cheap"],
       "correct": 1
     },
@@ -530,17 +650,17 @@
       "type": "write_word",
       "text_id": "text_010",
       "level": "B2",
-      "question": "How does the person get to work? (in Danish)",
+      "question": "Hvordan kommer personen på arbejde?",
       "correct": "tager bussen",
       "accept_variants": ["jeg tager bussen", "med bussen"],
-      "hint": "Public transportation"
+      "hint": "Offentlig transport"
     },
     {
       "id": "ex_048",
       "type": "match_pairs",
       "text_id": null,
       "level": "B2",
-      "question": "Match the transportation methods",
+      "question": "Match transportmetoderne",
       "pairs": [
         {"left": "at køre bil", "right": "to drive a car"},
         {"left": "at tage toget", "right": "to take the train"},
@@ -553,7 +673,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B2",
-      "question": "What does 'fordi' mean?",
+      "question": "Hvad betyder 'fordi'?",
       "options": ["But", "Because", "Therefore", "However"],
       "correct": 1
     },
@@ -562,17 +682,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "B2",
-      "question": "How do you say 'Healthy' in Danish?",
+      "question": "Hvordan siger man 'Healthy' på dansk?",
       "correct": "sundt",
       "accept_variants": ["sund"],
-      "hint": "Adjective form"
+      "hint": "Tillægsord"
     },
     {
       "id": "ex_051",
       "type": "multiple_choice",
       "text_id": null,
       "level": "A1",
-      "question": "What is 'Cat' in Danish?",
+      "question": "Hvordan siger man 'Cat' på dansk?",
       "options": ["kat", "hund", "fugl", "mus"],
       "correct": 0
     },
@@ -581,16 +701,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'Dog' in Danish?",
+      "question": "Hvordan siger man 'Dog' på dansk?",
       "correct": "hund",
-      "hint": "Similar to German"
+      "hint": "Ligner tysk"
     },
     {
       "id": "ex_053",
       "type": "match_pairs",
       "text_id": null,
       "level": "A1",
-      "question": "Match the animals",
+      "question": "Match dyrene",
       "pairs": [
         {"left": "hest", "right": "horse"},
         {"left": "ko", "right": "cow"},
@@ -603,7 +723,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A1",
-      "question": "What is 'Please' in Danish?",
+      "question": "Hvordan siger man 'Here you are' eller 'You're welcome' på dansk?",
       "options": ["tak", "undskyld", "værsgo", "hej"],
       "correct": 2
     },
@@ -612,17 +732,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'Good night' in Danish?",
+      "question": "Hvordan siger man 'Good night' på dansk?",
       "correct": "godnat",
       "accept_variants": ["god nat"],
-      "hint": "One or two words"
+      "hint": "Et eller to ord"
     },
     {
       "id": "ex_056",
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match more numbers",
+      "question": "Match flere tal",
       "pairs": [
         {"left": "fem", "right": "five"},
         {"left": "seks", "right": "six"},
@@ -635,7 +755,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'Big' in Danish?",
+      "question": "Hvordan siger man 'Big' på dansk?",
       "options": ["stor", "lille", "høj", "lav"],
       "correct": 0
     },
@@ -644,16 +764,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'Small' in Danish?",
+      "question": "Hvordan siger man 'Small' på dansk?",
       "correct": "lille",
-      "hint": "Opposite of 'stor'"
+      "hint": "Modsætning af 'stor'"
     },
     {
       "id": "ex_059",
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'Cold' in Danish?",
+      "question": "Hvordan siger man 'Cold' på dansk?",
       "options": ["varm", "kold", "våd", "tør"],
       "correct": 1
     },
@@ -662,7 +782,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match the weather words",
+      "question": "Match vejrordene",
       "pairs": [
         {"left": "sol", "right": "sun"},
         {"left": "regn", "right": "rain"},
@@ -675,16 +795,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'Warm' in Danish?",
+      "question": "Hvordan siger man 'Warm' på dansk?",
       "correct": "varm",
-      "hint": "Similar to English"
+      "hint": "Ligner engelsk"
     },
     {
       "id": "ex_062",
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'To drink' in Danish?",
+      "question": "Hvordan siger man 'To drink' på dansk?",
       "options": ["at drikke", "at spise", "at sove", "at løbe"],
       "correct": 0
     },
@@ -693,16 +813,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'Coffee' in Danish?",
+      "question": "Hvordan siger man 'Coffee' på dansk?",
       "correct": "kaffe",
-      "hint": "Very similar to English"
+      "hint": "Meget lig engelsk"
     },
     {
       "id": "ex_064",
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match the drinks",
+      "question": "Match drikkene",
       "pairs": [
         {"left": "te", "right": "tea"},
         {"left": "juice", "right": "juice"},
@@ -715,7 +835,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What is 'To need' in Danish?",
+      "question": "Hvordan siger man 'To need' på dansk?",
       "options": ["at have brug for", "at ville", "at skulle", "at måtte"],
       "correct": 0
     },
@@ -724,16 +844,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'To understand' in Danish?",
+      "question": "Hvordan siger man 'To understand' på dansk?",
       "correct": "at forstå",
-      "hint": "Starts with 'f'"
+      "hint": "Starter med 'f'"
     },
     {
       "id": "ex_067",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What does 'at betyde' mean?",
+      "question": "Hvad betyder 'at betyde'?",
       "options": ["To mean", "To say", "To speak", "To write"],
       "correct": 0
     },
@@ -742,7 +862,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "B1",
-      "question": "Match the body parts",
+      "question": "Match kropsdele",
       "pairs": [
         {"left": "hoved", "right": "head"},
         {"left": "hånd", "right": "hand"},
@@ -755,16 +875,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'To believe' in Danish?",
+      "question": "Hvordan siger man 'To believe' på dansk?",
       "correct": "at tro",
-      "hint": "Short verb"
+      "hint": "Kort udsagnsord"
     },
     {
       "id": "ex_070",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What is 'To remember' in Danish?",
+      "question": "Hvordan siger man 'To remember' på dansk?",
       "options": ["at huske", "at glemme", "at tænke", "at vide"],
       "correct": 0
     },
@@ -773,16 +893,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'To forget' in Danish?",
+      "question": "Hvordan siger man 'To forget' på dansk?",
       "correct": "at glemme",
-      "hint": "Opposite of 'at huske'"
+      "hint": "Modsætning af 'at huske'"
     },
     {
       "id": "ex_072",
       "type": "match_pairs",
       "text_id": null,
       "level": "B1",
-      "question": "Match the adjectives",
+      "question": "Match tillægsordene",
       "pairs": [
         {"left": "glad", "right": "happy"},
         {"left": "trist", "right": "sad"},
@@ -795,7 +915,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What does 'træt' mean?",
+      "question": "Hvad betyder 'træt'?",
       "options": ["Happy", "Tired", "Hungry", "Thirsty"],
       "correct": 1
     },
@@ -804,16 +924,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'Hungry' in Danish?",
+      "question": "Hvordan siger man 'Hungry' på dansk?",
       "correct": "sulten",
-      "hint": "Starts with 's'"
+      "hint": "Starter med 's'"
     },
     {
       "id": "ex_075",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B2",
-      "question": "What is 'To develop' in Danish?",
+      "question": "Hvordan siger man 'To develop' på dansk?",
       "options": ["at udvikle", "at opdage", "at opfinde", "at undersøge"],
       "correct": 0
     },
@@ -822,16 +942,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B2",
-      "question": "How do you say 'To decide' in Danish?",
+      "question": "Hvordan siger man 'To decide' på dansk?",
       "correct": "at beslutte",
-      "hint": "Starts with 'b'"
+      "hint": "Starter med 'b'"
     },
     {
       "id": "ex_077",
       "type": "match_pairs",
       "text_id": null,
       "level": "B2",
-      "question": "Match the professional verbs",
+      "question": "Match de professionelle udsagnsord",
       "pairs": [
         {"left": "at undersøge", "right": "to investigate"},
         {"left": "at forklare", "right": "to explain"},
@@ -844,7 +964,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B2",
-      "question": "What does 'at påvirke' mean?",
+      "question": "Hvad betyder 'at påvirke'?",
       "options": ["To affect/influence", "To prevent", "To protect", "To promote"],
       "correct": 0
     },
@@ -853,16 +973,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B2",
-      "question": "How do you say 'Environment' in Danish?",
+      "question": "Hvordan siger man 'Environment' på dansk?",
       "correct": "miljø",
-      "hint": "From French origin"
+      "hint": "Fra fransk oprindelse"
     },
     {
       "id": "ex_080",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B2",
-      "question": "What is 'To achieve' in Danish?",
+      "question": "Hvordan siger man 'To achieve' på dansk?",
       "options": ["at opnå", "at forsøge", "at miste", "at undgå"],
       "correct": 0
     },
@@ -871,7 +991,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "A1",
-      "question": "Match the rooms in a house",
+      "question": "Match værelserne i et hus",
       "pairs": [
         {"left": "køkken", "right": "kitchen"},
         {"left": "stue", "right": "living room"},
@@ -884,16 +1004,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A1",
-      "question": "How do you say 'Table' in Danish?",
+      "question": "Hvordan siger man 'Table' på dansk?",
       "correct": "bord",
-      "hint": "Starts with 'b'"
+      "hint": "Starter med 'b'"
     },
     {
       "id": "ex_083",
       "type": "multiple_choice",
       "text_id": null,
       "level": "A1",
-      "question": "What is 'Chair' in Danish?",
+      "question": "Hvordan siger man 'Chair' på dansk?",
       "options": ["stol", "bord", "lampe", "sofa"],
       "correct": 0
     },
@@ -902,16 +1022,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'To run' in Danish?",
+      "question": "Hvordan siger man 'To run' på dansk?",
       "correct": "at løbe",
-      "hint": "Similar to 'løb' (race)"
+      "hint": "Ligner 'løb' (race)"
     },
     {
       "id": "ex_085",
       "type": "match_pairs",
       "text_id": null,
       "level": "A2",
-      "question": "Match the sports",
+      "question": "Match sportsarterne",
       "pairs": [
         {"left": "svømning", "right": "swimming"},
         {"left": "tennis", "right": "tennis"},
@@ -924,7 +1044,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "A2",
-      "question": "What is 'To swim' in Danish?",
+      "question": "Hvordan siger man 'To swim' på dansk?",
       "options": ["at svømme", "at dykke", "at løbe", "at hoppe"],
       "correct": 0
     },
@@ -933,16 +1053,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "A2",
-      "question": "How do you say 'Ball' in Danish?",
+      "question": "Hvordan siger man 'Ball' på dansk?",
       "correct": "bold",
-      "hint": "Used in many sports"
+      "hint": "Bruges i mange sportsgrene"
     },
     {
       "id": "ex_088",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What does 'at mene' mean?",
+      "question": "Hvad betyder 'at mene'?",
       "options": ["To think/believe", "To know", "To forget", "To learn"],
       "correct": 0
     },
@@ -951,7 +1071,7 @@
       "type": "match_pairs",
       "text_id": null,
       "level": "B1",
-      "question": "Match the months",
+      "question": "Match månederne",
       "pairs": [
         {"left": "januar", "right": "January"},
         {"left": "februar", "right": "February"},
@@ -964,16 +1084,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'Year' in Danish?",
+      "question": "Hvordan siger man 'Year' på dansk?",
       "correct": "år",
-      "hint": "Very short word"
+      "hint": "Meget kort ord"
     },
     {
       "id": "ex_091",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B1",
-      "question": "What is 'To teach' in Danish?",
+      "question": "Hvordan siger man 'To teach' på dansk?",
       "options": ["at undervise", "at lære", "at studere", "at læse"],
       "correct": 0
     },
@@ -982,16 +1102,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B1",
-      "question": "How do you say 'To learn' in Danish?",
+      "question": "Hvordan siger man 'To learn' på dansk?",
       "correct": "at lære",
-      "hint": "Similar to teacher 'lærer'"
+      "hint": "Ligner lærer 'lærer'"
     },
     {
       "id": "ex_093",
       "type": "match_pairs",
       "text_id": null,
       "level": "B2",
-      "question": "Match the abstract nouns",
+      "question": "Match de abstrakte navneord",
       "pairs": [
         {"left": "frihed", "right": "freedom"},
         {"left": "lighed", "right": "equality"},
@@ -1004,7 +1124,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "B2",
-      "question": "What does 'at stræbe efter' mean?",
+      "question": "Hvad betyder 'at stræbe efter'?",
       "options": ["To strive for", "To give up", "To avoid", "To delay"],
       "correct": 0
     },
@@ -1013,16 +1133,16 @@
       "type": "write_word",
       "text_id": null,
       "level": "B2",
-      "question": "How do you say 'Society' in Danish?",
+      "question": "Hvordan siger man 'Society' på dansk?",
       "correct": "samfund",
-      "hint": "Compound word"
+      "hint": "Sammensat ord"
     },
     {
       "id": "ex_096",
       "type": "multiple_choice",
       "text_id": null,
       "level": "B2",
-      "question": "What is 'Knowledge' in Danish?",
+      "question": "Hvordan siger man 'Knowledge' på dansk?",
       "options": ["viden", "erfaring", "uddannelse", "læring"],
       "correct": 0
     },
@@ -1031,17 +1151,17 @@
       "type": "write_word",
       "text_id": null,
       "level": "C1",
-      "question": "How do you say 'To emphasize' in Danish?",
+      "question": "Hvordan siger man 'To emphasize' på dansk?",
       "correct": "at understrege",
       "accept_variants": ["at fremhæve"],
-      "hint": "Compound verb"
+      "hint": "Sammensat udsagnsord"
     },
     {
       "id": "ex_098",
       "type": "match_pairs",
       "text_id": null,
       "level": "C1",
-      "question": "Match the complex verbs",
+      "question": "Match de komplekse udsagnsord",
       "pairs": [
         {"left": "at antyde", "right": "to imply"},
         {"left": "at modsige", "right": "to contradict"},
@@ -1054,7 +1174,7 @@
       "type": "multiple_choice",
       "text_id": null,
       "level": "C1",
-      "question": "What does 'at gennemføre' mean?",
+      "question": "Hvad betyder 'at gennemføre'?",
       "options": ["To carry out/implement", "To prevent", "To postpone", "To cancel"],
       "correct": 0
     },
@@ -1063,10 +1183,981 @@
       "type": "write_word",
       "text_id": null,
       "level": "C1",
-      "question": "How do you say 'Nevertheless' in Danish?",
+      "question": "Hvordan siger man 'Nevertheless' på dansk?",
       "correct": "ikke desto mindre",
       "accept_variants": ["alligevel", "dog"],
-      "hint": "Multiple words possible"
+      "hint": "Flere ord muligt"
+    },
+    {
+      "id": "ex_101",
+      "type": "multiple_choice",
+      "text_id": "text_011",
+      "level": "A2",
+      "question": "Hvorfor er Sara nervøs?",
+      "options": ["Hun skal til eksamen", "Hun er til jobsamtale", "Hun skal møde sin chef", "Hun er til læge"],
+      "correct": 1,
+      "explanation": "Teksten siger 'Sara er til jobsamtale'"
+    },
+    {
+      "id": "ex_102",
+      "type": "write_word",
+      "text_id": "text_011",
+      "level": "A2",
+      "question": "Hvor mange sprog kan Sara tale?",
+      "correct": "tre",
+      "accept_variants": ["3"],
+      "hint": "Se i teksten hvor mange sprog der nævnes"
+    },
+    {
+      "id": "ex_103",
+      "type": "multiple_choice",
+      "text_id": "text_011",
+      "level": "B1",
+      "question": "Hvilken af Saras styrker ville være mest værdifuld i en international virksomhed?",
+      "options": ["Hun er organiseret", "Hun kan tale tre sprog", "Hun arbejder godt i teams", "Hun er forberedt"],
+      "correct": 1,
+      "explanation": "Sprogfærdigheder er særligt værdifulde i internationale virksomheder"
+    },
+    {
+      "id": "ex_104",
+      "type": "write_word",
+      "text_id": "text_011",
+      "level": "B1",
+      "question": "Hvilket ord beskriver Saras følelser efter samtalen?",
+      "correct": "optimistisk",
+      "hint": "Hun føler sig positiv om fremtiden"
+    },
+    {
+      "id": "ex_105",
+      "type": "multiple_choice",
+      "text_id": "text_012",
+      "level": "A2",
+      "question": "Hvor ofte går Morten på markedet?",
+      "options": ["Hver dag", "Hver lørdag", "Hver onsdag", "Hver søndag"],
+      "correct": 1,
+      "explanation": "Teksten starter med 'Hver lørdag går Morten på det lokale marked'"
+    },
+    {
+      "id": "ex_106",
+      "type": "write_word",
+      "text_id": "text_012",
+      "level": "A2",
+      "question": "Hvad skal Morten lave med grøntsagerne?",
+      "correct": "en salat",
+      "accept_variants": ["salat"],
+      "hint": "Han køber tomater, agurker og løg til..."
+    },
+    {
+      "id": "ex_107",
+      "type": "multiple_choice",
+      "text_id": "text_012",
+      "level": "B1",
+      "question": "Hvorfor køber Morten æbler på markedet selvom de er dyrere?",
+      "options": ["De smager bedre", "Han kan lide at støtte lokale producenter", "De er større", "Han har mange penge"],
+      "correct": 1,
+      "explanation": "Teksten siger 'Han kan lide at støtte lokale producenter'"
+    },
+    {
+      "id": "ex_108",
+      "type": "write_word",
+      "text_id": "text_012",
+      "level": "B1",
+      "question": "Hvilket ord beskriver tomaterne ifølge sælgeren?",
+      "correct": "økologiske",
+      "hint": "De er dyrket uden pesticider"
+    },
+    {
+      "id": "ex_109",
+      "type": "multiple_choice",
+      "text_id": "text_013",
+      "level": "A2",
+      "question": "Hvad fejler Lise?",
+      "options": ["Hun har hovedpine", "Hun har en halsbetændelse", "Hun har influenza", "Hun har feber"],
+      "correct": 1,
+      "explanation": "Lægen konkluderer at hun har en halsbetændelse"
+    },
+    {
+      "id": "ex_110",
+      "type": "write_word",
+      "text_id": "text_013",
+      "level": "A2",
+      "question": "Hvor mange dage skal Lise hvile sig?",
+      "correct": "tre",
+      "accept_variants": ["3", "tre dage"],
+      "hint": "Lægen råder hende til at hvile sig i..."
+    },
+    {
+      "id": "ex_111",
+      "type": "multiple_choice",
+      "text_id": "text_013",
+      "level": "B1",
+      "question": "Hvorfor bør Lise blive hjemme fra arbejde?",
+      "options": ["Hun er for syg", "For ikke at smitte kollegerne", "Lægen forbyder det", "Hun har brug for hvile"],
+      "correct": 1,
+      "explanation": "Lægen siger det er bedre at blive hjemme for ikke at smitte kollegerne"
+    },
+    {
+      "id": "ex_112",
+      "type": "write_word",
+      "text_id": "text_013",
+      "level": "B1",
+      "question": "Hvad udskriver lægen til Lise?",
+      "correct": "antibiotika",
+      "hint": "Medicin mod bakterielle infektioner"
+    },
+    {
+      "id": "ex_113",
+      "type": "multiple_choice",
+      "text_id": "text_014",
+      "level": "A2",
+      "question": "Hvad handler hygge om?",
+      "options": ["At være aktiv", "At skabe en hyggelig atmosfære", "At arbejde hårdt", "At være alene"],
+      "correct": 1,
+      "explanation": "Teksten siger 'Det handler om at skabe en hyggelig og tryg atmosfære'"
+    },
+    {
+      "id": "ex_114",
+      "type": "write_word",
+      "text_id": "text_014",
+      "level": "A2",
+      "question": "Hvad drikker danskerne når de hygger sig om vinteren?",
+      "correct": "varm kakao",
+      "accept_variants": ["kakao", "te", "varm kakao eller te"],
+      "hint": "Varme drikke nævnes i teksten"
+    },
+    {
+      "id": "ex_115",
+      "type": "multiple_choice",
+      "text_id": "text_014",
+      "level": "B1",
+      "question": "Ifølge teksten, hvad synes mange udlændinge om hygge?",
+      "options": ["Det er kedeligt", "Det er svært at forstå", "Det er en af de bedste ting ved Danmark", "Det er kun for danskere"],
+      "correct": 2,
+      "explanation": "Teksten afslutter med at mange udlændinge synes hygge er en af de bedste ting ved Danmark"
+    },
+    {
+      "id": "ex_116",
+      "type": "write_word",
+      "text_id": "text_014",
+      "level": "B1",
+      "question": "Hvilket ord bruges om den atmosfære hygge skaber? (to adjektiver)",
+      "correct": "hyggelig og tryg",
+      "accept_variants": ["tryg og hyggelig", "hyggelig", "tryg"],
+      "hint": "To beskrivende ord i teksten"
+    },
+    {
+      "id": "ex_117",
+      "type": "multiple_choice",
+      "text_id": "text_015",
+      "level": "B1",
+      "question": "Hvad er Danmarks mål ifølge teksten?",
+      "options": ["At plante flere træer", "At reducere CO2-udledningen", "At forbyde biler", "At bygge flere vindmøller"],
+      "correct": 1,
+      "explanation": "Regeringen har sat mål for at reducere CO2-udledningen"
+    },
+    {
+      "id": "ex_118",
+      "type": "write_word",
+      "text_id": "text_015",
+      "level": "B1",
+      "question": "Hvad producerer en stor del af Danmarks elektricitet?",
+      "correct": "vindmøller",
+      "accept_variants": ["vindmølle"],
+      "hint": "Vedvarende energi fra vinden"
+    },
+    {
+      "id": "ex_119",
+      "type": "multiple_choice",
+      "text_id": "text_015",
+      "level": "B2",
+      "question": "Hvad kan man konkludere om Danmarks tilgang til klimaforandringer?",
+      "options": ["Danmark ignorerer problemet", "Danmark tager det alvorligt med multiple tiltag", "Danmark fokuserer kun på cykling", "Danmark venter på andre lande"],
+      "correct": 1,
+      "explanation": "Teksten nævner flere tiltag og slutter med at Danmark tager klimaforandringer alvorligt"
+    },
+    {
+      "id": "ex_120",
+      "type": "write_word",
+      "text_id": "text_015",
+      "level": "B2",
+      "question": "Hvad sorterer de fleste borgere for at fremme genbrug?",
+      "correct": "deres affald",
+      "accept_variants": ["affald"],
+      "hint": "Hvad man smider ud"
+    },
+    {
+      "id": "ex_121",
+      "type": "multiple_choice",
+      "text_id": "text_016",
+      "level": "A2",
+      "question": "Hvilke byer vil Emma og hendes kæreste besøge?",
+      "options": ["Paris, London, Berlin", "Rom, Firenze, Venedig", "Madrid, Barcelona, Sevilla", "Wien, Prag, Budapest"],
+      "correct": 1,
+      "explanation": "Teksten nævner Rom, Firenze og Venedig"
+    },
+    {
+      "id": "ex_122",
+      "type": "write_word",
+      "text_id": "text_016",
+      "level": "A2",
+      "question": "Hvad glæder Emma sig især til at se?",
+      "correct": "Colosseum",
+      "hint": "En berømt bygning i Rom"
+    },
+    {
+      "id": "ex_123",
+      "type": "multiple_choice",
+      "text_id": "text_016",
+      "level": "B1",
+      "question": "Hvordan løser Emma og hendes kæreste deres uenighed om overnatning?",
+      "options": ["Emma bestemmer", "Kæresten bestemmer", "De bliver enige om at prøve begge dele", "De aflyser turen"],
+      "correct": 2,
+      "explanation": "Teksten siger 'De bliver enige om at prøve begge dele'"
+    },
+    {
+      "id": "ex_124",
+      "type": "write_word",
+      "text_id": "text_016",
+      "level": "B1",
+      "question": "Hvem foretrækker at bo på små hoteller?",
+      "correct": "Emma",
+      "hint": "Navnet på kvinden i teksten"
+    },
+    {
+      "id": "ex_125",
+      "type": "multiple_choice",
+      "text_id": "text_017",
+      "level": "B1",
+      "question": "Hvad bruger vi ifølge teksten ikke smartphones til?",
+      "options": ["Kommunikation", "Navigation", "At bage kager", "Underholdning"],
+      "correct": 2,
+      "explanation": "Teksten nævner kommunikation, navigation, shopping og underholdning - ikke bagning"
+    },
+    {
+      "id": "ex_126",
+      "type": "write_word",
+      "text_id": "text_017",
+      "level": "B1",
+      "question": "Hvad advarer eksperter om at for meget skærmtid kan skade?",
+      "correct": "mental sundhed",
+      "accept_variants": ["mentale sundhed", "sundhed"],
+      "hint": "Det handler om psykologisk velbefindende"
+    },
+    {
+      "id": "ex_127",
+      "type": "multiple_choice",
+      "text_id": "text_017",
+      "level": "B2",
+      "question": "Hvad er hovedbudskabet i teksten?",
+      "options": ["Smartphones er skadelige", "Vi bør smide vores telefoner væk", "Vi skal finde balance mellem digitalt og virkeligt liv", "Unge er afhængige af telefoner"],
+      "correct": 2,
+      "explanation": "Teksten understreger vigtigheden af balance mellem det digitale og det virkelige liv"
+    },
+    {
+      "id": "ex_128",
+      "type": "write_word",
+      "text_id": "text_017",
+      "level": "B2",
+      "question": "Hvad har nogle familier indført ved middagsbordet?",
+      "correct": "telefonfri zoner",
+      "accept_variants": ["telefonfri zone"],
+      "hint": "Områder uden mobiler"
+    },
+    {
+      "id": "ex_129",
+      "type": "multiple_choice",
+      "text_id": "text_018",
+      "level": "A2",
+      "question": "Hvad studerer Michael?",
+      "options": ["Jura", "Økonomi", "Medicin", "Sprog"],
+      "correct": 1,
+      "explanation": "Michael studerer økonomi på Københavns Universitet"
+    },
+    {
+      "id": "ex_130",
+      "type": "write_word",
+      "text_id": "text_018",
+      "level": "A2",
+      "question": "Hvilket år er Michael på universitet?",
+      "correct": "andet",
+      "accept_variants": ["2", "sit andet år"],
+      "hint": "Han er i sit... år"
+    },
+    {
+      "id": "ex_131",
+      "type": "multiple_choice",
+      "text_id": "text_018",
+      "level": "B1",
+      "question": "Hvorfor overvejer Michael at tage et semester i udlandet?",
+      "options": ["Han keder sig", "Han vil lære nye sprog", "Han tror international erfaring er værdifuld for karrieren", "Hans venner gør det"],
+      "correct": 2,
+      "explanation": "Michael tror at international erfaring vil være værdifuld for hans fremtidige karriere"
+    },
+    {
+      "id": "ex_132",
+      "type": "write_word",
+      "text_id": "text_018",
+      "level": "B1",
+      "question": "Nævn et af de lande Michael overvejer at studere i",
+      "correct": "Singapore",
+      "accept_variants": ["USA"],
+      "hint": "Enten et asiatisk land eller Nordamerika"
+    },
+    {
+      "id": "ex_133",
+      "type": "multiple_choice",
+      "text_id": "text_019",
+      "level": "A2",
+      "question": "Hvornår fejrer danskerne juleaften?",
+      "options": ["25. december", "24. december", "23. december", "26. december"],
+      "correct": 1,
+      "explanation": "Familierne samles den 24. december for at fejre juleaften"
+    },
+    {
+      "id": "ex_134",
+      "type": "write_word",
+      "text_id": "text_019",
+      "level": "A2",
+      "question": "Hvad danser man rundt om efter middagen?",
+      "correct": "juletræet",
+      "accept_variants": ["juletræ"],
+      "hint": "Et dekoreret træ"
+    },
+    {
+      "id": "ex_135",
+      "type": "multiple_choice",
+      "text_id": "text_019",
+      "level": "B1",
+      "question": "Hvad er traditionel julemad i Danmark ifølge teksten?",
+      "options": ["Kalkun med kartofler", "And eller flæskesteg med brune kartofler og rødkål", "Pizza", "Fisk med ris"],
+      "correct": 1,
+      "explanation": "Teksten beskriver and eller flæskesteg med brune kartofler og rødkål som traditionen"
+    },
+    {
+      "id": "ex_136",
+      "type": "write_word",
+      "text_id": "text_019",
+      "level": "B1",
+      "question": "Hvad synger man rundt om juletræet?",
+      "correct": "julesalmer",
+      "accept_variants": ["salmer"],
+      "hint": "Religiøse sange om jul"
+    },
+    {
+      "id": "ex_137",
+      "type": "multiple_choice",
+      "text_id": "text_020",
+      "level": "B1",
+      "question": "Hvad er den største udfordring med at finde lejlighed i København?",
+      "options": ["Lejlighederne er gamle", "Priserne er høje og der er stor efterspørgsel", "Der er ingen lejligheder", "Det tager for lang tid"],
+      "correct": 1,
+      "explanation": "Teksten nævner at priserne er høje og der er stor efterspørgsel"
+    },
+    {
+      "id": "ex_138",
+      "type": "write_word",
+      "text_id": "text_020",
+      "level": "B1",
+      "question": "Hvor længe har Thomas søgt efter en lejlighed?",
+      "correct": "flere måneder",
+      "accept_variants": ["i flere måneder", "måneder"],
+      "hint": "Mere end en måned"
+    },
+    {
+      "id": "ex_139",
+      "type": "multiple_choice",
+      "text_id": "text_020",
+      "level": "B2",
+      "question": "Hvad råder ejendomsmægleren Thomas til?",
+      "options": ["At vente på bedre priser", "At være hurtig med at beslutte sig", "At flytte til en anden by", "At købe i stedet for at leje"],
+      "correct": 1,
+      "explanation": "Ejendomsmægleren råder ham til at være hurtig med at beslutte sig"
+    },
+    {
+      "id": "ex_140",
+      "type": "write_word",
+      "text_id": "text_020",
+      "level": "B2",
+      "question": "Hvorfor overvejer Thomas at flytte til Frederiksberg eller Valby?",
+      "correct": "huslejen er lidt lavere",
+      "accept_variants": ["lavere husleje", "billigere"],
+      "hint": "Det handler om pris"
+    },
+    {
+      "id": "ex_141",
+      "type": "multiple_choice",
+      "text_id": "text_021",
+      "level": "B1",
+      "question": "Hvad værdsætter danskere meget højt?",
+      "options": ["Høje lønninger", "Work-life balance", "Lange arbejdsdage", "Konkurrence"],
+      "correct": 1,
+      "explanation": "Første sætning siger at danskere værdsætter work-life balance meget højt"
+    },
+    {
+      "id": "ex_142",
+      "type": "write_word",
+      "text_id": "text_021",
+      "level": "B1",
+      "question": "Hvad tid forlader folk normalt kontoret i Danmark?",
+      "correct": "16 eller 17",
+      "accept_variants": ["klokken 16", "klokken 17", "4 eller 5"],
+      "hint": "Om eftermiddagen"
+    },
+    {
+      "id": "ex_143",
+      "type": "multiple_choice",
+      "text_id": "text_021",
+      "level": "B2",
+      "question": "Hvor mange ugers ferie har danske arbejdere om året?",
+      "options": ["To til tre uger", "Tre til fire uger", "Fem til seks uger", "Syv til otte uger"],
+      "correct": 2,
+      "explanation": "Teksten nævner fem til seks ugers ferie om året"
+    },
+    {
+      "id": "ex_144",
+      "type": "write_word",
+      "text_id": "text_021",
+      "level": "B2",
+      "question": "Hvad bidrager work-life balance til ifølge teksten?",
+      "correct": "høje livskvalitet og tilfredshed",
+      "accept_variants": ["livskvalitet", "tilfredshed", "høj livskvalitet"],
+      "hint": "Det påvirker hvordan danskere har det"
+    },
+    {
+      "id": "ex_145",
+      "type": "multiple_choice",
+      "text_id": "text_022",
+      "level": "B2",
+      "question": "Hvornår skal Danmark være CO2-neutralt?",
+      "options": ["2030", "2040", "2050", "2060"],
+      "correct": 2,
+      "explanation": "Politikere diskuterer hvordan landet kan blive CO2-neutralt inden 2050"
+    },
+    {
+      "id": "ex_146",
+      "type": "write_word",
+      "text_id": "text_022",
+      "level": "B2",
+      "question": "Hvad kan havstigningen true ifølge forskere?",
+      "correct": "de danske kyster",
+      "accept_variants": ["danske kyster", "kysterne"],
+      "hint": "Områder ved havet"
+    },
+    {
+      "id": "ex_147",
+      "type": "multiple_choice",
+      "text_id": "text_022",
+      "level": "C1",
+      "question": "Hvad er der bred enighed om, men uenighed om?",
+      "options": ["At problemet eksisterer, men ikke metoderne", "At der skal handles nu, men uenighed om metoderne", "At det er vigtigt, men ikke presserende", "At teknologi er løsningen"],
+      "correct": 1,
+      "explanation": "Der er bred enighed om at der skal handles nu, men uenighed om metoderne"
+    },
+    {
+      "id": "ex_148",
+      "type": "write_word",
+      "text_id": "text_022",
+      "level": "C1",
+      "question": "Hvad foreslår nogle politikere som løsning?",
+      "correct": "højere grønne afgifter",
+      "accept_variants": ["grønne afgifter", "teknologisk innovation"],
+      "hint": "Økonomiske midler eller innovation"
+    },
+    {
+      "id": "ex_149",
+      "type": "multiple_choice",
+      "text_id": "text_023",
+      "level": "B1",
+      "question": "Hvad er biblioteket mere end ifølge teksten?",
+      "options": ["En boghandel", "Bare et sted at låne bøger", "En skole", "Et museum"],
+      "correct": 1,
+      "explanation": "Teksten starter med at biblioteket er mere end bare et sted at låne bøger"
+    },
+    {
+      "id": "ex_150",
+      "type": "write_word",
+      "text_id": "text_023",
+      "level": "B1",
+      "question": "Hvad læser bibliotekarerne højt for børn?",
+      "correct": "eventyr",
+      "accept_variants": ["historier", "bøger"],
+      "hint": "Fortællinger for børn"
+    },
+    {
+      "id": "ex_151",
+      "type": "multiple_choice",
+      "text_id": "text_023",
+      "level": "B2",
+      "question": "Hvordan bruger mange ældre biblioteket?",
+      "options": ["Til at arbejde", "Som et socialt mødested", "Til at studere", "Til at sove"],
+      "correct": 1,
+      "explanation": "Mange ældre bruger biblioteket som et socialt mødested"
+    },
+    {
+      "id": "ex_152",
+      "type": "write_word",
+      "text_id": "text_023",
+      "level": "B2",
+      "question": "Hvad tilbyder biblioteket gratis udover internetadgang?",
+      "correct": "hjælp til jobsøgning",
+      "accept_variants": ["jobsøgning"],
+      "hint": "Assistance med at finde arbejde"
+    },
+    {
+      "id": "ex_153",
+      "type": "multiple_choice",
+      "text_id": "text_024",
+      "level": "B2",
+      "question": "Hvad bestod traditionel dansk kost hovedsageligt af?",
+      "options": ["Fisk og ris", "Kød, kartofler og sovs", "Pasta og tomater", "Brød og ost"],
+      "correct": 1,
+      "explanation": "Traditionelt bestod den danske kost hovedsageligt af kød, kartofler og sovs"
+    },
+    {
+      "id": "ex_154",
+      "type": "write_word",
+      "text_id": "text_024",
+      "level": "B2",
+      "question": "Hvilken restaurant nævnes som eksempel på international succes?",
+      "correct": "Noma",
+      "hint": "En verdensberømt dansk restaurant"
+    },
+    {
+      "id": "ex_155",
+      "type": "multiple_choice",
+      "text_id": "text_024",
+      "level": "C1",
+      "question": "Hvad har gjort Danmark verdensberømt for gastronomisk innovation?",
+      "options": ["Traditionelle retter", "Nye nordiske køkken", "Fastfood", "Internationale køkkener"],
+      "correct": 1,
+      "explanation": "Nye nordiske køkken har gjort Danmark verdensberømt for gastronomisk innovation"
+    },
+    {
+      "id": "ex_156",
+      "type": "write_word",
+      "text_id": "text_024",
+      "level": "C1",
+      "question": "Hvordan beskrives den nye interesse for traditionelle retter?",
+      "correct": "med moderne twist",
+      "accept_variants": ["moderne twist"],
+      "hint": "Gammelt kombineret med noget nyt"
+    },
+    {
+      "id": "ex_157",
+      "type": "multiple_choice",
+      "text_id": "text_025",
+      "level": "B1",
+      "question": "Hvor mange københavnere cykler til arbejde eller studie dagligt?",
+      "options": ["En fjerdedel", "En tredjedel", "Næsten halvdelen", "To tredjedele"],
+      "correct": 2,
+      "explanation": "Næsten halvdelen af alle københavnere cykler til arbejde eller studie dagligt"
+    },
+    {
+      "id": "ex_158",
+      "type": "write_word",
+      "text_id": "text_025",
+      "level": "B1",
+      "question": "Hvad har København investeret massivt i?",
+      "correct": "cykelstier og cykelbroer",
+      "accept_variants": ["cykelstier", "cykelinfrastruktur"],
+      "hint": "Infrastruktur til cykler"
+    },
+    {
+      "id": "ex_159",
+      "type": "multiple_choice",
+      "text_id": "text_025",
+      "level": "B2",
+      "question": "Hvorfor studerer andre byer København?",
+      "options": ["For musikken", "Som eksempel på bæredygtig bytransport", "For arkitekturen", "For maden"],
+      "correct": 1,
+      "explanation": "Andre byer studerer København som et eksempel på bæredygtig bytransport"
+    },
+    {
+      "id": "ex_160",
+      "type": "write_word",
+      "text_id": "text_025",
+      "level": "B2",
+      "question": "Hvad har cykelstier mange steder i København?",
+      "correct": "forkørselsret",
+      "hint": "Prioritet i trafikken"
+    },
+    {
+      "id": "ex_161",
+      "type": "multiple_choice",
+      "text_id": "text_026",
+      "level": "B2",
+      "question": "Hvad tilbyder den danske stat gratis til alle borgere?",
+      "options": ["Mad og tøj", "Sundhedspleje og uddannelse", "Transport", "Bolig"],
+      "correct": 1,
+      "explanation": "Staten tilbyder gratis sundhedspleje og uddannelse for alle borgere"
+    },
+    {
+      "id": "ex_162",
+      "type": "write_word",
+      "text_id": "text_026",
+      "level": "B2",
+      "question": "Hvad modtager studerende mens de studerer?",
+      "correct": "SU",
+      "hint": "En månedlig støtte (forkortelse)"
+    },
+    {
+      "id": "ex_163",
+      "type": "multiple_choice",
+      "text_id": "text_026",
+      "level": "C1",
+      "question": "Hvilken udfordring står velfærdssystemet overfor?",
+      "options": ["For mange studerende", "En aldrende befolkning", "For lave skatter", "Mangel på hospitaler"],
+      "correct": 1,
+      "explanation": "Systemet står overfor udfordringer på grund af en aldrende befolkning"
+    },
+    {
+      "id": "ex_164",
+      "type": "write_word",
+      "text_id": "text_026",
+      "level": "C1",
+      "question": "Hvordan finansieres velfærdssystemet?",
+      "correct": "gennem høje skatter",
+      "accept_variants": ["høje skatter", "skatter"],
+      "hint": "Penge betalt til staten"
+    },
+    {
+      "id": "ex_165",
+      "type": "multiple_choice",
+      "text_id": "text_027",
+      "level": "A2",
+      "question": "Hvornår blev Hans Christian Andersen født?",
+      "options": ["1705", "1805", "1905", "1755"],
+      "correct": 1,
+      "explanation": "Han blev født i Odense i 1805"
+    },
+    {
+      "id": "ex_166",
+      "type": "write_word",
+      "text_id": "text_027",
+      "level": "A2",
+      "question": "I hvilken by blev Hans Christian Andersen født?",
+      "correct": "Odense",
+      "hint": "En by på Fyn"
+    },
+    {
+      "id": "ex_167",
+      "type": "multiple_choice",
+      "text_id": "text_027",
+      "level": "B1",
+      "question": "Hvor mange eventyr skrev Hans Christian Andersen?",
+      "options": ["Over 50", "Over 100", "Over 150", "Over 200"],
+      "correct": 2,
+      "explanation": "Han skrev over 150 eventyr"
+    },
+    {
+      "id": "ex_168",
+      "type": "write_word",
+      "text_id": "text_027",
+      "level": "B1",
+      "question": "Nævn et af Hans Christian Andersens mest kendte eventyr",
+      "correct": "Den lille havfrue",
+      "accept_variants": ["Den grimme ælling", "Snedronningen"],
+      "hint": "Flere mulige svar nævnes i teksten"
+    },
+    {
+      "id": "ex_169",
+      "type": "multiple_choice",
+      "text_id": "text_027",
+      "level": "B2",
+      "question": "Hvad indeholder Andersens eventyr ofte selvom de er skrevet for børn?",
+      "options": ["Magi", "Dybe filosofiske budskaber", "Skræmmende scener", "Humor"],
+      "correct": 1,
+      "explanation": "Hans eventyr indeholder ofte dybe filosofiske budskaber"
+    },
+    {
+      "id": "ex_170",
+      "type": "write_word",
+      "text_id": "text_027",
+      "level": "B2",
+      "question": "Hvad fejres den 2. april?",
+      "correct": "International Børnebogenes Dag",
+      "accept_variants": ["Børnebogenes Dag"],
+      "hint": "En international dag relateret til børnelitteratur"
+    },
+    {
+      "id": "ex_171",
+      "type": "multiple_choice",
+      "text_id": "text_028",
+      "level": "B2",
+      "question": "Hvem har den egentlige magt i Danmark?",
+      "options": ["Dronningen", "Folketinget og regeringen", "Kongen", "Borgmesteren"],
+      "correct": 1,
+      "explanation": "Den egentlige magt ligger hos Folketinget og regeringen"
+    },
+    {
+      "id": "ex_172",
+      "type": "write_word",
+      "text_id": "text_028",
+      "level": "B2",
+      "question": "Hvilke opgaver har dronningen primært?",
+      "correct": "ceremonielle",
+      "hint": "Formelle, symbolske opgaver"
+    },
+    {
+      "id": "ex_173",
+      "type": "multiple_choice",
+      "text_id": "text_028",
+      "level": "C1",
+      "question": "Hvor ofte afholdes der mindst valg i Danmark?",
+      "options": ["Hvert år", "Hvert andet år", "Hvert tredje år", "Hvert fjerde år"],
+      "correct": 3,
+      "explanation": "Der afholdes valg mindst hvert fjerde år"
+    },
+    {
+      "id": "ex_174",
+      "type": "write_word",
+      "text_id": "text_028",
+      "level": "C1",
+      "question": "Hvad er valgdeltagelsen ofte over i Danmark?",
+      "correct": "80%",
+      "accept_variants": ["80 procent", "80"],
+      "hint": "En procentdel"
+    },
+    {
+      "id": "ex_175",
+      "type": "multiple_choice",
+      "text_id": "text_029",
+      "level": "B1",
+      "question": "Hvad finder mange udlændinge særlig udfordrende ved dansk?",
+      "options": ["Grammatikken", "Udtalen", "Ordforrådet", "Skrivningen"],
+      "correct": 1,
+      "explanation": "Udtalen er særlig udfordrende"
+    },
+    {
+      "id": "ex_176",
+      "type": "write_word",
+      "text_id": "text_029",
+      "level": "B1",
+      "question": "Nævn den danske sætning som er næsten umulig for ikke-danskere at udtale",
+      "correct": "rødgrød med fløde",
+      "hint": "En traditionel dansk dessert"
+    },
+    {
+      "id": "ex_177",
+      "type": "multiple_choice",
+      "text_id": "text_029",
+      "level": "B2",
+      "question": "Hvordan er dansk grammatik sammenlignet med mange andre sprog?",
+      "options": ["Meget svær", "Relativt simpel", "Den sværeste", "Umulig at lære"],
+      "correct": 1,
+      "explanation": "Grammatikken er dog relativt simpel sammenlignet med mange andre sprog"
+    },
+    {
+      "id": "ex_178",
+      "type": "write_word",
+      "text_id": "text_029",
+      "level": "B2",
+      "question": "Hvordan tilbydes danskundervisning til indvandrere?",
+      "correct": "gratis",
+      "hint": "Prisen er..."
+    },
+    {
+      "id": "ex_179",
+      "type": "multiple_choice",
+      "text_id": "text_030",
+      "level": "B2",
+      "question": "Hvad er blevet mere almindeligt efter COVID-19 pandemien?",
+      "options": ["Kontorlokaler", "Fjernarbejde", "Lange arbejdsdage", "Weekendarbejde"],
+      "correct": 1,
+      "explanation": "Efter COVID-19 pandemien er fjernarbejde blevet mere almindeligt"
+    },
+    {
+      "id": "ex_180",
+      "type": "write_word",
+      "text_id": "text_030",
+      "level": "B2",
+      "question": "Hvad sparer fjernarbejde?",
+      "correct": "pendlingstid",
+      "accept_variants": ["tid"],
+      "hint": "Tiden brugt på transport til arbejde"
+    },
+    {
+      "id": "ex_181",
+      "type": "multiple_choice",
+      "text_id": "text_030",
+      "level": "C1",
+      "question": "Hvad savner nogle ved fjernarbejde?",
+      "options": ["Fri kaffe", "Den sociale kontakt med kollegerne", "Frokostpauser", "Kort arbejdsdag"],
+      "correct": 1,
+      "explanation": "Dog savner nogle den sociale kontakt med kollegerne"
+    },
+    {
+      "id": "ex_182",
+      "type": "write_word",
+      "text_id": "text_030",
+      "level": "C1",
+      "question": "Hvad forudser mange om fremtidens arbejdsplads?",
+      "correct": "en blanding af kontorarbejde og hjemmearbejde",
+      "accept_variants": ["blanding", "hybrid"],
+      "hint": "En kombination af to ting"
+    },
+    {
+      "id": "ex_183",
+      "type": "write_word",
+      "text_id": "text_011",
+      "level": "B1",
+      "question": "Udfyld: Sara forklarer, at hun er meget _______ og arbejder godt i teams.",
+      "correct": "organiseret",
+      "hint": "En styrke ved at kunne strukturere sit arbejde"
+    },
+    {
+      "id": "ex_184",
+      "type": "write_word",
+      "text_id": "text_012",
+      "level": "B1",
+      "question": "Udfyld: Tomaterne er _______ og kommer direkte fra en lokal gård.",
+      "correct": "økologiske",
+      "hint": "Dyrket uden pesticider"
+    },
+    {
+      "id": "ex_185",
+      "type": "write_word",
+      "text_id": "text_013",
+      "level": "A2",
+      "question": "Udfyld: Lægen råder Lise til at _______ sig i tre dage.",
+      "correct": "hvile",
+      "hint": "Tage det roligt og slappe af"
+    },
+    {
+      "id": "ex_186",
+      "type": "write_word",
+      "text_id": "text_014",
+      "level": "B1",
+      "question": "Udfyld: Om vinteren _______ danskerne mange lys og stearinlys.",
+      "correct": "tænder",
+      "hint": "Gør lys"
+    },
+    {
+      "id": "ex_187",
+      "type": "write_word",
+      "text_id": "text_015",
+      "level": "B2",
+      "question": "Udfyld: Regeringen har sat ambitiøse mål for at _______ CO2-udledningen.",
+      "correct": "reducere",
+      "hint": "Gøre mindre"
+    },
+    {
+      "id": "ex_188",
+      "type": "write_word",
+      "text_id": "text_016",
+      "level": "B1",
+      "question": "Udfyld: Emma begynder at _______ seværdigheder og restauranter.",
+      "correct": "researche",
+      "accept_variants": ["undersøge"],
+      "hint": "Finde information om"
+    },
+    {
+      "id": "ex_189",
+      "type": "write_word",
+      "text_id": "text_017",
+      "level": "B2",
+      "question": "Udfyld: Det er vigtigt at finde en _______ mellem det digitale og det virkelige liv.",
+      "correct": "balance",
+      "hint": "Ligevægt"
+    },
+    {
+      "id": "ex_190",
+      "type": "write_word",
+      "text_id": "text_018",
+      "level": "B1",
+      "question": "Udfyld: Selvom forelæsningerne er _______, nyder han at diskutere økonomiske teorier.",
+      "correct": "krævende",
+      "hint": "Svære og udfordrende"
+    },
+    {
+      "id": "ex_191",
+      "type": "write_word",
+      "text_id": "text_019",
+      "level": "A2",
+      "question": "Udfyld: Børnene venter _______ på julemanden.",
+      "correct": "spændt",
+      "hint": "Meget ivrige og exciterede"
+    },
+    {
+      "id": "ex_192",
+      "type": "write_word",
+      "text_id": "text_020",
+      "level": "B2",
+      "question": "Udfyld: En ejendomsmægler _______ ham til at være hurtig med at beslutte sig.",
+      "correct": "råder",
+      "hint": "Giver et godt råd til"
+    },
+    {
+      "id": "ex_193",
+      "type": "write_word",
+      "text_id": "text_021",
+      "level": "B2",
+      "question": "Udfyld: Familietid _______ som meget vigtig.",
+      "correct": "betragtes",
+      "hint": "Anses, ses som"
+    },
+    {
+      "id": "ex_194",
+      "type": "write_word",
+      "text_id": "text_022",
+      "level": "C1",
+      "question": "Udfyld: Unge aktivister _______ jævnligt for hurtigere handling.",
+      "correct": "demonstrerer",
+      "hint": "Protesterer offentligt"
+    },
+    {
+      "id": "ex_195",
+      "type": "write_word",
+      "text_id": "text_023",
+      "level": "B2",
+      "question": "Udfyld: Det er et eksempel på, hvordan offentlige institutioner kan _______ lokalsamfundet sammen.",
+      "correct": "binde",
+      "hint": "Forbinde, samle"
+    },
+    {
+      "id": "ex_196",
+      "type": "write_word",
+      "text_id": "text_024",
+      "level": "C1",
+      "question": "Udfyld: I dag _______ danskerne mere med internationale retter.",
+      "correct": "eksperimenterer",
+      "hint": "Prøver nye ting"
+    },
+    {
+      "id": "ex_197",
+      "type": "write_word",
+      "text_id": "text_025",
+      "level": "B2",
+      "question": "Udfyld: Byen har investeret massivt i cykelstier for at gøre det _______ og bekvemt at cykle.",
+      "correct": "sikkert",
+      "hint": "Uden fare"
+    },
+    {
+      "id": "ex_198",
+      "type": "write_word",
+      "text_id": "text_026",
+      "level": "C1",
+      "question": "Udfyld: Velfærdsstaten _______ også arbejdsløshedsunderstøttelse og pensioner.",
+      "correct": "sikrer",
+      "hint": "Garanterer, sørger for"
+    },
+    {
+      "id": "ex_199",
+      "type": "write_word",
+      "text_id": "text_029",
+      "level": "B2",
+      "question": "Udfyld: Selvom mange danskere taler godt engelsk, _______ de pris på, når udlændinge forsøger at tale dansk.",
+      "correct": "sætter",
+      "hint": "Værdsætter (sætter pris på)"
+    },
+    {
+      "id": "ex_200",
+      "type": "write_word",
+      "text_id": "text_030",
+      "level": "C1",
+      "question": "Udfyld: Forskere undersøger, hvordan fjernarbejde _______ produktivitet og trivsel.",
+      "correct": "påvirker",
+      "hint": "Har indflydelse på"
     }
   ]
 }
