@@ -21,6 +21,9 @@
         <activity
             android:name=".ExerciseActivity"
             android:exported="false" />
+        <activity
+            android:name=".ProgressOverviewActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
