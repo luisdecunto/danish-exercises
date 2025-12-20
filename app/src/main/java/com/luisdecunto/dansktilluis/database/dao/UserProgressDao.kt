@@ -23,6 +23,9 @@ interface UserProgressDao {
     @Query("SELECT COUNT(*) FROM user_progress WHERE isCompleted = 1")
     fun getCompletedCount(): Flow<Int>
 
+    @Query("SELECT COUNT(*) FROM user_progress WHERE isCorrect = 1")
+    fun getCorrectCount(): Flow<Int>
+
     @Query("SELECT COUNT(*) FROM user_progress")
     fun getTotalAttemptedCount(): Flow<Int>
 

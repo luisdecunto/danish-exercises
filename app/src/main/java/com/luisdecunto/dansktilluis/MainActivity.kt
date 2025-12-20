@@ -152,26 +152,44 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun startRandomExercise() {
-        if (exerciseSets.isNotEmpty()) {
-            val randomSet = exerciseSets.random()
-            startExerciseSet(randomSet)
-        } else {
-            Toast.makeText(this, "No exercises available", Toast.LENGTH_SHORT).show()
+        lifecycleScope.launch {
+            val allExercises = database.exerciseDao().getAllExercises().first()
+            val allProgress = database.userProgressDao().getAllProgress().first()
+
+            // Create a set of solved exercise IDs (where isCorrect = true)
+            val solvedExerciseIds = allProgress.filter { it.isCorrect }.map { it.exerciseId }.toSet()
+
+            // Filter to only unsolved exercises
+            val unsolvedExercises = allExercises.filter { it.id !in solvedExerciseIds }
+
+            if (unsolvedExercises.isNotEmpty()) {
+                val randomExercise = unsolvedExercises.random()
+                // Create a temporary exercise set with 1 exercise
+                val tempSet = ExerciseSet(
+                    id = "random_${randomExercise.id}",
+                    title = "Random Exercise",
+                    description = "Level: ${randomExercise.level ?: "Unknown"}",
+                    exercises = listOfNotNull(convertEntityToExercise(randomExercise))
+                )
+                startExerciseSet(tempSet)
+            } else {
+                Toast.makeText(this@MainActivity, "All exercises completed! Great job!", Toast.LENGTH_LONG).show()
+            }
         }
     }
 
     private fun updateStatistics() {
         lifecycleScope.launch {
             val totalExercises = database.exerciseDao().getExerciseCount().first()
-            val completedExercises = database.userProgressDao().getCompletedCount().first()
+            val correctExercises = database.userProgressDao().getCorrectCount().first()
 
             val percentage = if (totalExercises > 0) {
-                (completedExercises * 100) / totalExercises
+                (correctExercises * 100) / totalExercises
             } else {
                 0
             }
 
-            binding.statsTextView.text = "Completed: $completedExercises / $totalExercises"
+            binding.statsTextView.text = "Solved: $correctExercises / $totalExercises"
             binding.statsProgressBar.progress = percentage
         }
     }
