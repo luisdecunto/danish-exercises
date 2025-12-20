@@ -31,6 +31,9 @@ class MultipleChoiceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Setup collapsible text if available
+        setupCollapsibleText()
+
         binding.questionTextView.text = exercise.question
 
         // Create radio buttons for each option
@@ -64,6 +67,25 @@ class MultipleChoiceFragment : Fragment() {
 
                 onAnswerSubmitted?.invoke(isCorrect)
             }
+        }
+    }
+
+    private fun setupCollapsibleText() {
+        if (exercise.textContent != null) {
+            binding.collapsibleText.root.visibility = View.VISIBLE
+            binding.collapsibleText.textContentTextView.text = exercise.textContent
+
+            var isExpanded = false
+            binding.collapsibleText.textHeader.setOnClickListener {
+                isExpanded = !isExpanded
+                binding.collapsibleText.textContentTextView.visibility =
+                    if (isExpanded) View.VISIBLE else View.GONE
+                binding.collapsibleText.expandIcon.setImageResource(
+                    if (isExpanded) R.drawable.ic_expand_less else R.drawable.ic_expand_more
+                )
+            }
+        } else {
+            binding.collapsibleText.root.visibility = View.GONE
         }
     }
 

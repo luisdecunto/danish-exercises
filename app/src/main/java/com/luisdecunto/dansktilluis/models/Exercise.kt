@@ -10,6 +10,10 @@ sealed class Exercise {
     abstract val question: String
     abstract var isCompleted: Boolean
     abstract var userAnswer: String?
+    open var textId: String? = null
+    open var textTitle: String? = null
+    open var textContent: String? = null
+    open var level: String? = null
 
     abstract fun checkAnswer(answer: String): Boolean
 }
@@ -23,7 +27,11 @@ data class MultipleChoiceExercise(
     val options: List<String>,
     val correctAnswerIndex: Int,
     override var isCompleted: Boolean = false,
-    override var userAnswer: String? = null
+    override var userAnswer: String? = null,
+    override var textId: String? = null,
+    override var textTitle: String? = null,
+    override var textContent: String? = null,
+    override var level: String? = null
 ) : Exercise() {
 
     override fun checkAnswer(answer: String): Boolean {
@@ -41,7 +49,11 @@ data class FillInTheBlankExercise(
     val correctAnswer: String,
     val hint: String? = null,
     override var isCompleted: Boolean = false,
-    override var userAnswer: String? = null
+    override var userAnswer: String? = null,
+    override var textId: String? = null,
+    override var textTitle: String? = null,
+    override var textContent: String? = null,
+    override var level: String? = null
 ) : Exercise() {
 
     override fun checkAnswer(answer: String): Boolean {
@@ -59,7 +71,11 @@ data class MatchPairsExercise(
     val rightItems: List<String>,
     val correctPairs: Map<Int, Int>, // Map of left index to right index
     override var isCompleted: Boolean = false,
-    override var userAnswer: String? = null // JSON string of user's pairs
+    override var userAnswer: String? = null, // JSON string of user's pairs
+    override var textId: String? = null,
+    override var textTitle: String? = null,
+    override var textContent: String? = null,
+    override var level: String? = null
 ) : Exercise() {
 
     override fun checkAnswer(answer: String): Boolean {

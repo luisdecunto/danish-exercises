@@ -21,6 +21,7 @@
     <!-- Navigation Drawer -->
     <string name="nav_dashboard">Dashboard</string>
     <string name="nav_random_exercise">Random Exercise</string>
+    <string name="nav_progress_overview">Progress Overview</string>
     <string name="nav_browse_exercises">Browse Exercises</string>
     <string name="nav_statistics">Statistics</string>
     <string name="nav_settings">Settings</string>
@@ -37,4 +38,9 @@
     <string name="menu_refresh">Refresh</string>
     <string name="open_drawer">Open navigation drawer</string>
     <string name="close_drawer">Close navigation drawer</string>
+
+    <!-- Collapsible Text -->
+    <string name="read_text">📖 Read Text</string>
+    <string name="expand_text">Expand text</string>
+    <string name="collapse_text">Collapse text</string>
 </resources>

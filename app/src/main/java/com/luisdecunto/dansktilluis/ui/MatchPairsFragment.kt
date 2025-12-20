@@ -19,12 +19,14 @@ class MatchPairsFragment : Fragment() {
     private lateinit var exercise: MatchPairsExercise
     private var onAnswerSubmitted: ((Boolean) -> Unit)? = null
 
-    private var selectedLeftIndex: Int? = null
-    private var selectedRightIndex: Int? = null
-    private val userPairs = mutableMapOf<Int, Int>()
+    private var selectedLeftButton: Button? = null
+    private var selectedRightButton: Button? = null
+    private val userPairs = mutableMapOf<Button, Button>()
 
     private val leftButtons = mutableListOf<Button>()
     private val rightButtons = mutableListOf<Button>()
+    private val leftIndexMap = mutableMapOf<Button, Int>()
+    private val rightIndexMap = mutableMapOf<Button, Int>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,19 +40,28 @@ class MatchPairsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Setup collapsible text if available
+        setupCollapsibleText()
+
         binding.questionTextView.text = exercise.question
 
+        // Shuffle both columns with indices
+        val shuffledLeftWithIndex = exercise.leftItems.mapIndexed { index, item -> index to item }.shuffled()
+        val shuffledRightWithIndex = exercise.rightItems.mapIndexed { index, item -> index to item }.shuffled()
+
         // Create buttons for left column
-        exercise.leftItems.forEachIndexed { index, item ->
-            val button = createPairButton(item, index, isLeft = true)
+        shuffledLeftWithIndex.forEach { (originalIndex, item) ->
+            val button = createPairButton(item, isLeft = true)
             leftButtons.add(button)
+            leftIndexMap[button] = originalIndex
             binding.leftColumn.addView(button)
         }
 
         // Create buttons for right column
-        exercise.rightItems.forEachIndexed { index, item ->
-            val button = createPairButton(item, index, isLeft = false)
+        shuffledRightWithIndex.forEach { (originalIndex, item) ->
+            val button = createPairButton(item, isLeft = false)
             rightButtons.add(button)
+            rightIndexMap[button] = originalIndex
             binding.rightColumn.addView(button)
         }
 
@@ -59,15 +70,21 @@ class MatchPairsFragment : Fragment() {
         }
 
         binding.submitButton.setOnClickListener {
-            if (userPairs.size == exercise.leftItems.size) {
-                val answerString = userPairs.entries.joinToString(",") { "{${it.key}:${it.value}}" }
+            if (userPairs.size == leftButtons.size) {
+                val answerPairs = mutableMapOf<Int, Int>()
+                userPairs.forEach { (leftBtn, rightBtn) ->
+                    val leftIdx = leftIndexMap[leftBtn]!!
+                    val rightIdx = rightIndexMap[rightBtn]!!
+                    answerPairs[leftIdx] = rightIdx
+                }
+
+                val answerString = answerPairs.entries.joinToString(",") { "{${it.key}:${it.value}}" }
                 val isCorrect = exercise.checkAnswer(answerString)
 
                 showFeedback(isCorrect)
                 exercise.isCompleted = isCorrect
                 exercise.userAnswer = answerString
 
-                // Disable interaction after submission
                 disableAllButtons()
                 binding.submitButton.isEnabled = false
                 binding.resetButton.isEnabled = false
@@ -77,7 +94,7 @@ class MatchPairsFragment : Fragment() {
         }
     }
 
-    private fun createPairButton(text: String, index: Int, isLeft: Boolean): Button {
+    private fun createPairButton(text: String, isLeft: Boolean): Button {
         return Button(requireContext()).apply {
             this.text = text
             layoutParams = ViewGroup.MarginLayoutParams(
@@ -89,57 +106,59 @@ class MatchPairsFragment : Fragment() {
 
             setOnClickListener {
                 if (isLeft) {
-                    handleLeftButtonClick(index)
+                    if (userPairs.containsKey(this)) return@setOnClickListener
+                    handleLeftButtonClick(this)
                 } else {
-                    handleRightButtonClick(index)
+                    if (userPairs.containsValue(this)) return@setOnClickListener
+                    handleRightButtonClick(this)
                 }
             }
         }
     }
 
-    private fun handleLeftButtonClick(index: Int) {
-        if (userPairs.containsKey(index)) return // Already paired
+    private fun handleLeftButtonClick(button: Button) {
+        if (userPairs.containsKey(button)) return
 
-        selectedLeftIndex = index
+        selectedLeftButton = button
         updateButtonStates()
 
-        if (selectedRightIndex != null) {
-            createPair(selectedLeftIndex!!, selectedRightIndex!!)
+        if (selectedRightButton != null) {
+            createPair(selectedLeftButton!!, selectedRightButton!!)
         } else {
             binding.instructionTextView.text = getString(R.string.select_second_item)
         }
     }
 
-    private fun handleRightButtonClick(index: Int) {
-        if (userPairs.containsValue(index)) return // Already paired
+    private fun handleRightButtonClick(button: Button) {
+        if (userPairs.containsValue(button)) return
 
-        selectedRightIndex = index
+        selectedRightButton = button
         updateButtonStates()
 
-        if (selectedLeftIndex != null) {
-            createPair(selectedLeftIndex!!, selectedRightIndex!!)
+        if (selectedLeftButton != null) {
+            createPair(selectedLeftButton!!, selectedRightButton!!)
         } else {
             binding.instructionTextView.text = getString(R.string.select_first_item)
         }
     }
 
-    private fun createPair(leftIndex: Int, rightIndex: Int) {
-        userPairs[leftIndex] = rightIndex
-        selectedLeftIndex = null
-        selectedRightIndex = null
+    private fun createPair(leftBtn: Button, rightBtn: Button) {
+        userPairs[leftBtn] = rightBtn
+        selectedLeftButton = null
+        selectedRightButton = null
         binding.instructionTextView.text = getString(R.string.select_first_item)
         updateButtonStates()
     }
 
     private fun updateButtonStates() {
-        leftButtons.forEachIndexed { index, button ->
+        leftButtons.forEach { button ->
             when {
-                userPairs.containsKey(index) -> {
+                userPairs.containsKey(button) -> {
                     button.setBackgroundColor(
                         ContextCompat.getColor(requireContext(), R.color.correct_green)
                     )
                 }
-                selectedLeftIndex == index -> {
+                selectedLeftButton == button -> {
                     button.setBackgroundColor(
                         ContextCompat.getColor(requireContext(), R.color.selected_blue)
                     )
@@ -152,14 +171,14 @@ class MatchPairsFragment : Fragment() {
             }
         }
 
-        rightButtons.forEachIndexed { index, button ->
+        rightButtons.forEach { button ->
             when {
-                userPairs.containsValue(index) -> {
+                userPairs.containsValue(button) -> {
                     button.setBackgroundColor(
                         ContextCompat.getColor(requireContext(), R.color.correct_green)
                     )
                 }
-                selectedRightIndex == index -> {
+                selectedRightButton == button -> {
                     button.setBackgroundColor(
                         ContextCompat.getColor(requireContext(), R.color.selected_blue)
                     )
@@ -175,8 +194,8 @@ class MatchPairsFragment : Fragment() {
 
     private fun resetSelections() {
         userPairs.clear()
-        selectedLeftIndex = null
-        selectedRightIndex = null
+        selectedLeftButton = null
+        selectedRightButton = null
         binding.instructionTextView.text = getString(R.string.select_first_item)
         updateButtonStates()
     }
@@ -184,6 +203,25 @@ class MatchPairsFragment : Fragment() {
     private fun disableAllButtons() {
         leftButtons.forEach { it.isEnabled = false }
         rightButtons.forEach { it.isEnabled = false }
+    }
+
+    private fun setupCollapsibleText() {
+        if (exercise.textContent != null) {
+            binding.collapsibleText.root.visibility = View.VISIBLE
+            binding.collapsibleText.textContentTextView.text = exercise.textContent
+
+            var isExpanded = false
+            binding.collapsibleText.textHeader.setOnClickListener {
+                isExpanded = !isExpanded
+                binding.collapsibleText.textContentTextView.visibility =
+                    if (isExpanded) View.VISIBLE else View.GONE
+                binding.collapsibleText.expandIcon.setImageResource(
+                    if (isExpanded) R.drawable.ic_expand_less else R.drawable.ic_expand_more
+                )
+            }
+        } else {
+            binding.collapsibleText.root.visibility = View.GONE
+        }
     }
 
     private fun showFeedback(isCorrect: Boolean) {

@@ -50,6 +50,7 @@ There are three types of exercises: `multiple_choice`, `write_word`, and `match_
 - `type` (string, required): One of: "multiple_choice", "write_word", "match_pairs"
 - `question` (string, required): The question or prompt to display
 - `text_id` (string, optional): Reference to a text ID from the texts dictionary. Use `null` for standalone exercises.
+- `level` (string, optional): Difficulty level. One of: "A1", "A2", "B1", "B2", "C1", "C2". Use `null` if not specified.
 
 ### Type 1: Multiple Choice
 
@@ -64,6 +65,7 @@ There are three types of exercises: `multiple_choice`, `write_word`, and `match_
   "id": "ex_001",
   "type": "multiple_choice",
   "text_id": "text_001",
+  "level": "A2",
   "question": "Hvornår går jeg i supermarkedet?",
   "options": ["Mandag", "Onsdag", "Fredag", "Lørdag"],
   "correct": 1,
@@ -86,6 +88,7 @@ User must type the correct answer.
   "id": "ex_002",
   "type": "write_word",
   "text_id": "text_001",
+  "level": "A1",
   "question": "How do you say 'milk' in Danish?",
   "correct": "mælk",
   "accept_variants": ["maelk"],
@@ -112,6 +115,7 @@ User must match items from a left column with items from a right column.
   "id": "ex_003",
   "type": "match_pairs",
   "text_id": null,
+  "level": "A1",
   "question": "Match the Danish words with their English translations",
   "pairs": [
     {"left": "mælk", "right": "milk"},
@@ -150,6 +154,7 @@ User must match items from a left column with items from a right column.
       "id": "ex_001",
       "type": "multiple_choice",
       "text_id": "text_001",
+      "level": "A1",
       "question": "What does 'Hej' mean?",
       "options": ["Goodbye", "Hello", "Thank you", "Please"],
       "correct": 1
@@ -158,6 +163,7 @@ User must match items from a left column with items from a right column.
       "id": "ex_002",
       "type": "write_word",
       "text_id": null,
+      "level": "A1",
       "question": "Translate to Danish: 'Thank you'",
       "correct": "tak",
       "accept_variants": ["mange tak"]
@@ -166,6 +172,7 @@ User must match items from a left column with items from a right column.
       "id": "ex_003",
       "type": "match_pairs",
       "text_id": null,
+      "level": "A1",
       "question": "Match the greetings",
       "pairs": [
         {"left": "Hej", "right": "Hello"},
